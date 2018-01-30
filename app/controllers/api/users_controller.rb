@@ -5,14 +5,14 @@ class Api::UsersController < ApplicationController
     if @user.save!
       login(@user)
     else
-
+      #render errors
     end
   end
 
   def show
     @user = User.find_by(email: email)
   end
-  
+
   private
 
   def user_params
