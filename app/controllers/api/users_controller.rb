@@ -4,8 +4,7 @@ class Api::UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save!
       login(@user)
-    else
-      #render errors
+      render json: @user
     end
   end
 

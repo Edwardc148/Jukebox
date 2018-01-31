@@ -1,8 +1,12 @@
 import React from 'react';
+import SignupContainer from './session/signup_container';
+import NavBarContainer from './navbar/nav_bar_container';
+import { Route } from 'react-router-dom';
 
 const App = () => (
   <div>
-    <h1>This is now my Jukebox</h1>
+    <Route path="/" component={NavBarContainer} />
+    <Route path="/signup" component={SignupContainer} />
   </div>
 );
 

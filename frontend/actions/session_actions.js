@@ -7,6 +7,8 @@ export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const LOGOUT_CURRENT_USER = 'LOGOUT_CURRENT_USER';
 
 const receiveCurrentUser = (user) => {
+  console.log(user);
+  console.log("hi");
   return {
     type: RECEIVE_CURRENT_USER,
     user: user
@@ -19,10 +21,9 @@ const logoutCurrentUser = () => {
   };
 };
 
-export const createNewUser = formUser => dispatch => {
-  return postUser(formUser)
-    .then(serverUser => dispatch(receiveCurrentUser(serverUser)));
-};
+export const createNewUser = formUser => dispatch => (
+  postUser(formUser).then(serverUser => dispatch(receiveCurrentUser(serverUser)))
+);
 
 export const login = formUser => dispatch => {
   return postSession(formUser)
