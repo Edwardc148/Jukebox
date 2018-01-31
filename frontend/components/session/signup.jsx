@@ -31,29 +31,32 @@ class Signup extends React.Component {
         <h1>the music you love find you</h1>
         <h2>Sign up for free</h2>
         <form className="session-form">
-          <label>Name:
+          <label className="session-form-top-label">
             <input
               type="text"
               value={this.state.name}
               onChange={this.handleInput('name')}
+              placeholder="Name"
             />
           </label>
-          <label>Email:
+          <label className="session-form-mid-label">
             <input
               type="text"
               value={this.state.email}
               onChange={this.handleInput('email')}
+              placeholder="Email"
             />
           </label>
-          <label>Password:
+          <label className="session-form-btm-label">
             <input
               type="password"
               value={this.state.password}
               onChange={this.handleInput('password')}
+              placeholder="Password"
             />
           </label>
 
-          <button onClick={this.handleSubmit}>Sign Up</button>
+          <button className="session-form-btn" onClick={this.handleSubmit}>Sign Up</button>
         </form>
       </div>
     );
