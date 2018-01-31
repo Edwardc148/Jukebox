@@ -1,3 +1,18 @@
 .nav-bar {
+  font-family: "Avenir Next";
+  display: flex;
+  justify-content: space-between;
+}
 
+.button {
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.jukebox-logo {
+  color: white;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }

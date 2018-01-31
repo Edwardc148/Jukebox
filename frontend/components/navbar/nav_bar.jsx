@@ -17,7 +17,7 @@ export default ( { currentUser, logout} ) => {
 
   return (
     <header className="nav-bar">
-      <h1 className="jukebox-logo">JukeBox</h1>
+      <h1 className="jukebox-logo">jukebox</h1>
       <div>
         {display}
       </div>
