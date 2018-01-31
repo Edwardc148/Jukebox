@@ -1,18 +1,41 @@
 .nav-bar {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;;
   display: flex;
   justify-content: space-between;
 }
 
-.button {
-  padding: 5px;
-  background-color: white;
-  border-radius: 5px;
+.button-signup {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  padding: 3px 20px 3px 20px;
+  background-color: #fff;
+  color: blue;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400px;
+  margin: 23px 35px 0px 0px;
+}
+
+.button-login {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  padding: 3px 20px 3px 20px;
+  background-color: hsla(0,0%,100%,.2);
+  color: white;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400px;
+  margin: 23px 35px 0px 0px;
 }
 
 .jukebox-logo {
+  display: inline-block;
   color: white;
-  height: 5rem;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 15px 0px 0px 50px
 }

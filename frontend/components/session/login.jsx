@@ -1,14 +1,12 @@
 import React from 'react';
 
-class Signup extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       email: "",
-      password: "",
-      name: ""
+      password: ""
     };
-
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -20,22 +18,15 @@ class Signup extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createNewUser(this.state)
+    this.props.login(this.state)
       .then(() => this.props.history.push('/stations'));
   }
 
   render() {
     return (
-      <div className="session-form">
-        <h2>Sign Up</h2>
+      <div className="login-form">
+        <h2>Login</h2>
         <form>
-          <label>Name:
-            <input
-              type="text"
-              value={this.state.name}
-              onChange={this.handleInput('name')}
-            />
-          </label>
           <label>Email:
             <input
               type="text"
@@ -51,11 +42,11 @@ class Signup extends React.Component {
             />
           </label>
 
-          <button onClick={this.handleSubmit}>Sign Up</button>
+          <button onClick={this.handleSubmit}>Log In</button>
         </form>
       </div>
     );
   }
 }
 
-export default Signup;
+export default Login;
