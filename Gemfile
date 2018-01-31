@@ -28,7 +28,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -51,7 +50,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'better_errors'
   gem 'annotate'
-
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
