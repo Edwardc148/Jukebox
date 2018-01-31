@@ -23,16 +23,11 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack -w",
-    "postinstall": "webpack"
+    "start": "webpack -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Edwardc148/Jukebox.git"
-  },
-  "engines":{
-    "npm": "3.10.10",
-    "node": "v6.10.1"
   },
   "keywords": [],
   "author": "",
