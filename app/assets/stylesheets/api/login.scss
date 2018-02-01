@@ -47,6 +47,7 @@
   background-color: #224099;
   border-radius: 5px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .login-form input {
@@ -55,6 +56,11 @@
 
 .login-form button:hover {
   cursor: pointer;
+}
+
+.login-form-demo-btn {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 ::-webkit-input-placeholder {

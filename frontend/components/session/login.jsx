@@ -8,6 +8,7 @@ class Login extends React.Component {
       password: ""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemo = this.handleDemo.bind(this);
   }
 
   handleInput(type) {
@@ -19,6 +20,12 @@ class Login extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.login(this.state)
+      .then(() => this.props.history.push('/stations'));
+  }
+
+  handleDemo(e) {
+    e.preventDefault();
+    this.props.login({email: "demo@gmail.com", password: "password"})
       .then(() => this.props.history.push('/stations'));
   }
 
@@ -47,6 +54,7 @@ class Login extends React.Component {
           </label>
 
           <button className="login-form-btn" onClick={this.handleSubmit}>Log In</button>
+          <button className="login-form-demo-btn" onClick={this.handleDemo}>Demo</button>
         </form>
       </div>
     );
