@@ -1,8 +1,5 @@
-// Place all the styles related to the api/sessions controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 
-.session-form-div {
+.login-form-div {
   color: #fff;
   display: flex;
   text-align: center;
@@ -10,44 +7,56 @@
   margin-top: 150px;
 }
 
-.session-form-div h1 {
+.login-form-div h1 {
   font-size: 47px;
   font-weight: 100;
 }
 
-.session-form-div h2 {
+.login-form-div h2 {
   margin-top: 40px;
   font-size: 24px;
   font-weight: 100;
 }
-.session-form {
+
+.login-form {
   display: flex;
   flex-direction: column;
 }
 
-.session-form input {
+.login-form input {
   display: block;
   width: 250px;
   height: 40px;
   margin: 0 auto;
 }
 
-.session-form-top-label {
+.login-form-top-label {
   margin-top: 25px;
 }
 
-.session-form-mid-label {
-  margin-top: 10px;
-}
-
-.session-form-btm-label {
+.login-form-btm-label {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.session-form button {
+.login-form button {
   width: 256px;
   height: 40px;
   display: block;
   margin: auto;
+  background-color: #224099;
+  border-radius: 5px;
+  color: white;
+}
+
+.login-form input {
+  text-align: center;
+}
+
+.login-form button:hover {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
 }
