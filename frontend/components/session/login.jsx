@@ -5,10 +5,22 @@ class Login extends React.Component {
     super(props);
     this.state = {
       email: "",
-      password: ""
+      password: "",
+      errors: this.props.errors
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleDemo = this.handleDemo.bind(this);
+    this.renderErrors = this.renderErrors.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.clearErrors();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.loggedIn) {
+      this.props.history.push('/stations');
+    }
   }
 
   handleInput(type) {
@@ -19,8 +31,7 @@ class Login extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.login(this.state)
-      .then(() => this.props.history.push('/stations'));
+    this.props.login(this.state);
   }
 
   handleDemo(e) {
@@ -29,12 +40,26 @@ class Login extends React.Component {
       .then(() => this.props.history.push('/stations'));
   }
 
+  renderErrors() {
+    console.log(this.props);
+    return(
+      <ul>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   render() {
     return (
       <div className="login-form-div">
         <h1>Find the music you love and let</h1>
         <h1>the music you love find you</h1>
         <h2>Login</h2>
+        {this.renderErrors()}
         <form className="login-form">
           <label className="login-form-top-label">
             <input

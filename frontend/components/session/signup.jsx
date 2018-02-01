@@ -10,6 +10,18 @@ class Signup extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.renderErrors = this.renderErrors.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.clearErrors();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log(nextProps);
+    if (nextProps.loggedIn) {
+      this.props.history.push('/stations');
+    }
   }
 
   handleInput(type) {
@@ -20,8 +32,20 @@ class Signup extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.createNewUser(this.state)
-      .then(() => this.props.history.push('/stations'));
+    this.props.createNewUser(this.state);
+  }
+
+  renderErrors() {
+    console.log(this.props);
+    return(
+      <ul>
+        {this.props.errors.map((error, i) => (
+          <li key={`error-${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
   }
 
   render() {
@@ -30,6 +54,7 @@ class Signup extends React.Component {
         <h1>Find the music you love and let</h1>
         <h1>the music you love find you</h1>
         <h2>Sign up for free</h2>
+        {this.renderErrors()}
         <form className="session-form">
           <label className="session-form-top-label">
             <input
