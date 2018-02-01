@@ -5,7 +5,7 @@ import NavBarContainer from './navbar/nav_bar_container';
 import MediaPlayerContainer from './mediaplayer/media_player_container';
 import Home from './home/home';
 import StationsIndexContainer from './stations/stations_index_container';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import {
   AuthRoute,
   ProtectedRoute,
@@ -14,10 +14,13 @@ import {
 const App = () => (
   <div id="container">
     <Route path="/" component={NavBarContainer} />
-    <Route exact path="/" component={Home} />
-    <AuthRoute path="/signup" component={SignupContainer} />
-    <AuthRoute path="/login" component={LoginContainer} />
-    <ProtectedRoute path="/stations" component={StationsIndexContainer} />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <AuthRoute path="/signup" component={SignupContainer} />
+      <AuthRoute path="/login" component={LoginContainer} />
+      <ProtectedRoute path="/stations" component={StationsIndexContainer} />
+      <Route component={Home} />
+    </Switch>
     <Route path="/" component={MediaPlayerContainer} />
   </div>
 );

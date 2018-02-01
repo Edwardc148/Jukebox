@@ -7,7 +7,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .session-form-div h1 {
@@ -65,4 +65,8 @@
 
 ::-webkit-input-placeholder {
    text-align: center;
+}
+
+.errors {
+  margin-top: 10px;
 }

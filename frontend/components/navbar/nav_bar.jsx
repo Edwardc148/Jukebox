@@ -6,8 +6,10 @@ export default ( { currentUser, logout, path} ) => {
   if (currentUser) {
       display = (
       <div>
-        <h1>Hello, {currentUser.name}</h1>
-        <button onClick={logout}>Logout</button>
+        <Link className="button-now-playing" to={"/stations"}>Now Playing</Link>
+        <Link className="button-my-stations" to={"/stations"}>My Stations</Link>
+        <button className="button-logout" onClick={logout}>Logout</button>
+
       </div>
     );
   } else {
@@ -26,7 +28,7 @@ export default ( { currentUser, logout, path} ) => {
 
   return (
     <header className="nav-bar">
-      <h1 className="jukebox-logo">jukebox</h1>
+      <Link className="jukebox-logo" to={"/"}>jukebox</Link>
       <div>
         {display}
       </div>

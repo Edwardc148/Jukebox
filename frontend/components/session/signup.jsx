@@ -18,7 +18,6 @@ class Signup extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    console.log(nextProps);
     if (nextProps.loggedIn) {
       this.props.history.push('/stations');
     }
@@ -36,9 +35,8 @@ class Signup extends React.Component {
   }
 
   renderErrors() {
-    console.log(this.props);
     return(
-      <ul>
+      <ul className="errors">
         {this.props.errors.map((error, i) => (
           <li key={`error-${i}`}>
             {error}

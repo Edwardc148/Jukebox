@@ -18,6 +18,20 @@
   margin: 23px 35px 0px 0px;
 }
 
+.button-logout {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  padding: 3px 20px 3px 20px;
+  background-color: #fff;
+  color: blue;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400px;
+  margin: 23px 35px 0px 0px;
+}
+
 .button-login {
   display: inline-block;
   width: 50px;
@@ -32,8 +46,13 @@
   margin: 23px 35px 0px 0px;
 }
 
+.button-logout:hover {
+  cursor: pointer;
+}
+
 .jukebox-logo {
   display: inline-block;
+  text-decoration: none;
   color: white;
   font-size: 28px;
   font-weight: 500;
