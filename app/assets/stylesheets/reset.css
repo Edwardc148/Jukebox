@@ -30,3 +30,11 @@ html, body {
 	text-align: center;
 	background-color: rgba(0,0,0,.1);
 }
+
+.react-player {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
