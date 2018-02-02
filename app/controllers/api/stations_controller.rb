@@ -2,6 +2,7 @@ class Api::StationsController < ApplicationController
 
   def index
     @stations = Station.all
+    render :index
   end
 
   def create

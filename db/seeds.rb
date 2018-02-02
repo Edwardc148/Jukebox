@@ -7,4 +7,44 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # user1 = User.create(email: "demo@gmail.com", name: "Demo", )
 
-User.create(name: "Demo", email: "demo@gmail.com", password: "password");
+User.destroy_all
+Station.destroy_all
+Artist.destroy_all
+Album.destroy_all
+
+demo = User.create(name: "Demo", email: "demo@gmail.com", password: "password")
+
+artist1 = Artist.create(name: "Demo Artist", description: "This is a demo description")
+
+album1 = Album.create(name: "Nature Radio", artist_id: artist1.id, release_yr: 2018, image_url: 'https://i.imgur.com/sduLRvf.jpg')
+
+album2 = Album.create(name: "Forest Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
+
+album3 = Album.create(name: "Raindrops Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/IVyU5Im.jpg')
+
+album4 = Album.create(name: "Epic Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/QguApMA.jpg')
+
+album5 = Album.create(name: "Heavy Metal Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/Gb6xVGP.jpg')
+
+album6 = Album.create(name: "Emo Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
+
+station1 = Station.create(name: "Nature Station", user_id: demo.id)
+station2 = Station.create(name: "Forest Station", user_id: demo.id)
+station3 = Station.create(name: "Raindrops Station", user_id: demo.id)
+station4 = Station.create(name: "Epic Station", user_id: demo.id)
+station5 = Station.create(name: "Heavy Metal Station", user_id: demo.id)
+station6 = Station.create(name: "Emo Station", user_id: demo.id)
+
+song1 = Song.create(name: "Song1", album_id: album1.id, duration: 130)
+song2 = Song.create(name: "Song1", album_id: album2.id, duration: 130)
+song3 = Song.create(name: "Song1", album_id: album3.id, duration: 130)
+song4 = Song.create(name: "Song1", album_id: album4.id, duration: 130)
+song5 = Song.create(name: "Song1", album_id: album5.id, duration: 130)
+song6 = Song.create(name: "Song1", album_id: album6.id, duration: 130)
+
+StationSong.create(song_id: song1.id, station_id: station1.id)
+StationSong.create(song_id: song2.id, station_id: station2.id)
+StationSong.create(song_id: song3.id, station_id: station3.id)
+StationSong.create(song_id: song4.id, station_id: station4.id)
+StationSong.create(song_id: song5.id, station_id: station5.id)
+StationSong.create(song_id: song6.id, station_id: station6.id)

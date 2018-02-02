@@ -6,7 +6,7 @@ import { receiveAllStations, receiveOneStation } from '../../actions/station_act
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    stations: state
+    stations: Object.values(state.stations)
   };
 };
 
