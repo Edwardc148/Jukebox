@@ -5,16 +5,15 @@ import { receiveOneStation } from '../../actions/station_actions';
 import StationShow from './station_show';
 
 const mapStateToProps = (state, ownProps) => {
-  console.log(ownProps);
   return {
-
+    station: state.stations[ownProps.match.params.id]
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    fetchOneStation: (station) => dispatch(receiveOneStation(station))
+    fetchOneStation: (id) => dispatch(receiveOneStation(id))
   };
 };
 
-export default withRouter(connect(null, mapDispatchToProps)(StationShow));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(StationShow));

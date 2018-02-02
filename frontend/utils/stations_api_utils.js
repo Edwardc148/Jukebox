@@ -4,10 +4,8 @@ export const fetchAllStations = () => {
   });
 };
 
-export const fetchOneStation = (post) => {
+export const fetchOneStation = (id) => {
   return $.ajax({
-    url: `/api/stations/${post.id}`,
-    method: 'POST',
-    data: { post: post }
+    url: `/api/stations/${id}`
   });
 };

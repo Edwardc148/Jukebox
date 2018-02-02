@@ -11,9 +11,10 @@ const fetchAllStations = (stations) => {
 };
 
 const fetchOneStation = (station) => {
+  console.log(station);
   return {
     type: RECEIVE_ONE_STATION,
-    station: station
+    station: Object.values(station)[0]
   };
 };
 
@@ -22,7 +23,7 @@ export const receiveAllStations = () => dispatch => (
     .then(serverStations => dispatch(fetchAllStations(serverStations)))
 );
 
-export const receiveOneStation = (station) => dispatch => (
-  StationsAPIUtils.fetchOneStation(station)
+export const receiveOneStation = (id) => dispatch => (
+  StationsAPIUtils.fetchOneStation(id)
     .then(serverStation => dispatch(fetchOneStation(serverStation)))
 );

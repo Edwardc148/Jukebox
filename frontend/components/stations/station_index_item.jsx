@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const StationIndexItem = props => {;
+const StationIndexItem = props => {
   return (
     <div className="station-index-item">
       <Link

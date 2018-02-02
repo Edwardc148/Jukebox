@@ -6,9 +6,18 @@ class StationShow extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    console.log(this.props);
+    this.props.fetchOneStation(this.props.match.params.id);
+  }
+
   render() {
     return (
-      <h1>Hello</h1>
+      <div>
+        <img
+          className="album-image" src={this.props.station.image_url} width="100" height="100">
+        </img>
+      </div>
     );
   }
 }
