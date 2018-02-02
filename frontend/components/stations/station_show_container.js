@@ -1,18 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { receiveOneStation } from '../../actions/station_actions';
+import { receiveOneStation, receiveAllStations } from '../../actions/station_actions';
 import StationShow from './station_show';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    station: state.stations[ownProps.match.params.id]
+    station: state.stations[ownProps.match.params.id],
+    stations: Object.values(state.stations)
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    fetchOneStation: (id) => dispatch(receiveOneStation(id))
+    fetchOneStation: (id) => dispatch(receiveOneStation(id)),
+    fetchAllStations: () => dispatch(receiveAllStations())
   };
 };
 

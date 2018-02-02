@@ -28,12 +28,12 @@ album5 = Album.create(name: "Heavy Metal Radio", artist_id: artist1.id, release_
 
 album6 = Album.create(name: "Emo Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
 
-station1 = Station.create(name: "Nature Station", user_id: demo.id)
-station2 = Station.create(name: "Forest Station", user_id: demo.id)
-station3 = Station.create(name: "Raindrops Station", user_id: demo.id)
-station4 = Station.create(name: "Epic Station", user_id: demo.id)
-station5 = Station.create(name: "Heavy Metal Station", user_id: demo.id)
-station6 = Station.create(name: "Emo Station", user_id: demo.id)
+station1 = Station.create(name: "Nature", user_id: demo.id)
+station2 = Station.create(name: "Forest", user_id: demo.id)
+station3 = Station.create(name: "Raindrops", user_id: demo.id)
+station4 = Station.create(name: "Epic", user_id: demo.id)
+station5 = Station.create(name: "Heavy Metal", user_id: demo.id)
+station6 = Station.create(name: "Emo", user_id: demo.id)
 
 song1 = Song.create(name: "Song1", album_id: album1.id, duration: 130)
 song2 = Song.create(name: "Song1", album_id: album2.id, duration: 130)

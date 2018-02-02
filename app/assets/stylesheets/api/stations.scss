@@ -35,3 +35,52 @@
 .station-name:hover {
   text-decoration: underline;
 }
+
+.show-album-image {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.show-station-full-div {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.show-station-index-item {
+  position: relative;
+  text-align: center;
+}
+
+.show-station-name {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show-radio-image {
+  text-decoration: none;
+}
+
+.show-station-div {
+  margin-left: 170px;
+}
+
+.big-album-image {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+
+.show-station-index-div {
+  &:hover {
+    margin-right: 50px;
+  }
+}
