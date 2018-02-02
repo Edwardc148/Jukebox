@@ -2,13 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.album-image {
-  display: inline-block;
-  width: 180px;
-  height: 180px;
-}
+
 
 .station-index-item {
   display: flex;
   flex-direction: column;
+  margin: 15px 40px 15px 40px;
+}
+
+.station-index {
+  display: flex;
+  flex-wrap: wrap;;
+  flex-direction: row;
+  padding-left: 90px;
+  padding-top: 80px;
+}
+
+.album-image {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.station-name {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.station-name:hover {
+  text-decoration: underline;
 }

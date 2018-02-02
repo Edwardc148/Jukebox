@@ -60,3 +60,27 @@
   font-weight: 500;
   margin: 15px 0px 0px 50px
 }
+
+.button-now-playing {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 180px;
+  top: 25px;
+}
+
+.button-now-playing:hover {
+  text-decoration: underline;
+}
+
+.button-my-stations {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 300px;
+  top: 25px;
+}
+
+.button-my-stations:hover {
+  text-decoration: underline;
+}
