@@ -8,10 +8,16 @@ class Api::StationsController < ApplicationController
   def create
     @station = Station.new(station_params)
     @station.user_id = current_user.id
+    if @station.save
+      render :show
+    else
+      render json: @user.errors.full_messages, status: 422
+    end
   end
 
   def show
     @station = Station.find_by(id: params[:id])
+    render :show
   end
 
   def destroy
