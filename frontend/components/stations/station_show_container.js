@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { receiveOneStation } from '../../actions/station_actions';
-import StationShow from '/station_show';
+import StationShow from './station_show';
 
 const mapStateToProps = (state, ownProps) => {
   console.log(ownProps);
@@ -17,4 +17,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   };
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(StationShow));
+export default withRouter(connect(null, mapDispatchToProps)(StationShow));

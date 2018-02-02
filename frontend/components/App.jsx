@@ -5,6 +5,7 @@ import NavBarContainer from './navbar/nav_bar_container';
 import MediaPlayerContainer from './mediaplayer/media_player_container';
 import Home from './home/home';
 import StationsIndexContainer from './stations/stations_index_container';
+import StationShowContainer from './stations/station_show_container';
 import { Route, Switch } from 'react-router-dom';
 import {
   AuthRoute,
@@ -18,6 +19,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <AuthRoute path="/signup" component={SignupContainer} />
       <AuthRoute path="/login" component={LoginContainer} />
+      <ProtectedRoute path="/stations/:id" component={StationShowContainer} />
       <ProtectedRoute path="/stations" component={StationsIndexContainer} />
       <Route component={Home} />
     </Switch>

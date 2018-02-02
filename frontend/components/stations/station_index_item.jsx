@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const StationIndexItem = props => {
+const StationIndexItem = props => {;
   return (
     <div className="station-index-item">
       <Link
-        className="radio-image" to={"/stations"}>
+        className="radio-image" to={`/stations/${props.station.id}`}>
         <img
           className="album-image" src={props.station.image_url} width="100" height="100">
         </img>
       </Link>
 
       <Link
-        className="station-name" to={"/stations"}>
+        className="station-name" to={`/stations/${props.station.id}`}>
         {props.station.name}
       </Link>
     </div>
