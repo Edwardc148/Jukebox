@@ -10,8 +10,6 @@ class StationShow extends React.Component {
   }
 
   componentDidMount() {
-    // this.props.fetchAllStations();
-    // console.log(this.props);
     if (this.props.stations.length <= 1) {
       this.props.fetchAllStations()
         .then(this.props.fetchOneStation(this.props.match.params.id));
@@ -28,13 +26,12 @@ class StationShow extends React.Component {
 
   render() {
 
-    // if (this.props.station) {
-    //   const song = Object.values(this.state.songs)[0];
-    //   console.log(song);
-    // }
-
-    if (this.props.station) {
+    console.log(this.props.songs);
+    console.log(this.props.station);
+    if ((this.props.songs !== {} ) && (this.props.station !== undefined) ) {
       console.log(this.props);
+      console.log(this.props.station);
+      console.log(this.props.songs);
       let current_song_id = this.props.station.songs[0];
       console.log(current_song_id);
       return (

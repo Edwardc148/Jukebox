@@ -16,17 +16,17 @@ demo = User.create(name: "Demo", email: "demo@gmail.com", password: "password")
 
 artist1 = Artist.create(name: "Demo Artist", description: "This is a demo description")
 
-album1 = Album.create(name: "Nature Radio", artist_id: artist1.id, release_yr: 2018, image_url: 'https://i.imgur.com/sduLRvf.jpg')
+album1 = Album.create(name: "Nature Album", artist_id: artist1.id, release_yr: 2018, image_url: 'https://i.imgur.com/sduLRvf.jpg')
 
-album2 = Album.create(name: "Forest Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
+album2 = Album.create(name: "Forest Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
 
-album3 = Album.create(name: "Raindrops Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/IVyU5Im.jpg')
+album3 = Album.create(name: "Raindrops Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/IVyU5Im.jpg')
 
-album4 = Album.create(name: "Epic Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/QguApMA.jpg')
+album4 = Album.create(name: "Epic Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/QguApMA.jpg')
 
-album5 = Album.create(name: "Heavy Metal Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/Gb6xVGP.jpg')
+album5 = Album.create(name: "Heavy Metal Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/Gb6xVGP.jpg')
 
-album6 = Album.create(name: "Emo Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/PnSeZX3.jpg')
+album6 = Album.create(name: "Emo Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/PnSeZX3.jpg')
 
 station1 = Station.create(name: "Nature", user_id: demo.id)
 station2 = Station.create(name: "Forest", user_id: demo.id)
