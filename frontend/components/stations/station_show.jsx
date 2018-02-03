@@ -10,11 +10,18 @@ class StationShow extends React.Component {
 
   componentDidMount() {
     // this.props.fetchAllStations();
+    // console.log(this.props);
     if (this.props.stations.length <= 1) {
       this.props.fetchAllStations()
         .then(this.props.fetchOneStation(this.props.match.params.id));
     } else {
       this.props.fetchOneStation(this.props.match.params.id);
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.match.params.id !== nextProps.match.params.id) {
+      nextProps.fetchOneStation(nextProps.match.params.id);
     }
   }
 

@@ -7,7 +7,7 @@ export default (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_ONE_STATION:
-      newState = _.merge({}, state, action.songs);
+      newState = _.merge({}, action.songs);
       return newState;
     default:
       return state;
