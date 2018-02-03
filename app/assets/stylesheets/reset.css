@@ -4,8 +4,9 @@ html, body, div, span, h1, h2, h3, p, img, strong, center, ol, ul, li, nav, butt
   border: 0;
   font-size: 100%;
   font-family: "Avenir Next";
-  vertical-align: inherit;
-  box-sizing: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -22,19 +23,10 @@ html, body {
   position: relative;
 }
 
-.media-player {
+.footer-media-player-div {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
-	text-align: center;
 	background-color: rgba(0,0,0,.1);
-}
-
-.react-player {
-  position: absolute;
-  display: inline-block;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
 }

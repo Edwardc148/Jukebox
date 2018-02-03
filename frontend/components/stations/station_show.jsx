@@ -16,6 +16,7 @@ class StationShow extends React.Component {
   }
 
   render() {
+    console.log(this.props.station);
     if (this.props.station) {
       return (
         <div className="show-station-full-div">

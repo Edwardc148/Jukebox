@@ -1,9 +1,18 @@
-.media-player a {
+.footer-media-player-div a {
   display: inline-block;
-  padding-top: 19px;
+  padding-top: 18px;
+  padding-left: 25px;
   text-decoration: none;
 }
 
-.media-player a:visited {
+.footer-media-player-div a:visited {
   color: black;
+}
+
+.react-player {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
 }

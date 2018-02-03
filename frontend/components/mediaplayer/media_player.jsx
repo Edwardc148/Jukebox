@@ -5,7 +5,7 @@ import ReactMediaPlayer from './react-player.jsx';
 class MediaPlayer extends React.Component {
   render() {
     return (
-      <div className="media-player">
+      <div className="footer-media-player-div">
         <ReactMediaPlayer />
         <footer>
           <a href="https://github.com/Edwardc148/Jukebox">Github</a>

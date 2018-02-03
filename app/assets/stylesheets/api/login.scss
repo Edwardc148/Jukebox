@@ -51,6 +51,10 @@
   margin-bottom: 10px;
 }
 
+.login-form button:hover {
+  background: blue;
+}
+
 .login-form input {
   text-align: center;
 }
@@ -62,6 +66,10 @@
 .login-form-demo-btn {
   display: inline-block;
   margin-top: 10px;
+}
+
+.login-form-demo-btn:hover {
+  background: blue;
 }
 
 ::-webkit-input-placeholder {

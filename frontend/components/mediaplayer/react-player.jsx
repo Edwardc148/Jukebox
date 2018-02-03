@@ -6,7 +6,7 @@ class ReactMediaPlayer extends React.Component {
     super(props);
     this.state = {
       url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-      playing: true,
+      playing: false,
       volume: 1
     };
   }

@@ -11,12 +11,13 @@ const StationIndexItem = props => {
           className="album-image" src={props.station.image_url} width="100" height="100">
         </img>
       </Link>
-
-      <Link
-        className="station-name"
-        to={`/stations/${props.station.id}`}>
-        {props.station.name}
-      </Link>
+      <p className="station-name">
+        <Link className="station-name-link" to={`/stations/${props.station.id}`}>
+          <span>
+            {props.station.name}
+          </span>
+        </Link>
+      </p>
     </div>
   );
 };

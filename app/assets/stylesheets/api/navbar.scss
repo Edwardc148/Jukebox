@@ -1,8 +1,20 @@
+// background:url(asset-path('user_profile.png'));
 .nav-bar {
   font-family: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: space-between;
 }
+
+.jukebox-logo {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 15px 0px 0px 50px
+}
+
+// Buttons
 
 .button-signup {
   display: inline-block;
@@ -20,7 +32,6 @@
 
 .button-logout {
   display: inline-block;
-  width: 50px;
   text-align: center;
   padding: 3px 20px 3px 20px;
   background-color: #fff;
@@ -30,7 +41,6 @@
   font-size: 12px;
   font-weight: 400px;
   margin: 23px 35px 0px 0px;
-  // background:url(asset-path('user_profile.png'));
   background-size: cover;
 }
 
@@ -48,29 +58,12 @@
   margin: 23px 35px 0px 0px;
 }
 
-.button-logout:hover {
-  cursor: pointer;
-}
-
-.jukebox-logo {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  font-size: 28px;
-  font-weight: 500;
-  margin: 15px 0px 0px 50px
-}
-
 .button-now-playing {
   text-decoration: none;
   color: black;
   position: absolute;
   left: 180px;
   top: 25px;
-}
-
-.button-now-playing:hover {
-  text-decoration: underline;
 }
 
 .button-my-stations {
@@ -81,6 +74,25 @@
   top: 25px;
 }
 
+//
+
+.button-now-playing:hover {
+  text-decoration: underline;
+}
+
 .button-my-stations:hover {
   text-decoration: underline;
+}
+
+.button-logout:hover {
+  cursor: pointer;
+  background: lightblue;
+}
+
+.button-signup:hover {
+  background: lightblue;
+}
+
+.button-login:hover {
+  background: lightblue;
 }

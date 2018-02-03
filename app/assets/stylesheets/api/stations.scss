@@ -1,13 +1,32 @@
 // Place all the styles related to the api/stations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// background:url(asset-path('play_button.png'));
 
+.radio-image {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
 
+.album-image {
+  display: inline-block;
+  height: 100%;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
 
 .station-index-item {
   display: flex;
   flex-direction: column;
-  margin: 15px 40px 15px 40px;
+  margin: 15px 70px 15px 40px;
+}
+
+.station-name-link {
+  text-decoration: none;
+  color: black;
 }
 
 .station-index {
@@ -18,41 +37,17 @@
   padding-top: 80px;
 }
 
-.radio-image {
-  position: relative;
-}
-
-.album-image {
-  position: relative;
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  z-index: 0;
-}
-
-.album-image:hover {
-  opacity: 0.5;
-  // background:url(asset-path('play_button.png'));
-}
-
 .station-name {
   text-decoration: none;
-  color: black;
   text-align: center;
   padding-top: 10px;
 }
 
-.station-name:hover {
+.station-name-link span:hover {
   text-decoration: underline;
 }
 
-.show-album-image {
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-}
+// Show Station CSS
 
 .show-station-full-div {
   display: flex;
@@ -61,25 +56,45 @@
 }
 
 .show-station-index-item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  height: 50px;
+  padding-bottom: 10px;
 }
 
-.show-station-name {
-  text-decoration: none;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.for-hover {
+  height: 100%;
+  position: relative;
+}
+
+.for-hover:hover {
+  opacity: 0.5;
 }
 
 .show-radio-image {
-  text-decoration: none;
+  height: 100%;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.show-album-image {
+  width: 200px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.show-station-name {
+  color: white;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 38%);
 }
 
 .show-station-div {
-  margin-left: 170px;
+  margin-left: 500px;
 }
 
 .big-album-image {
@@ -88,14 +103,10 @@
   height: 300px;
   border-radius: 5px;
 }
-
-
-.show-station-index-div {
-  &:hover {
-    margin-right: 100px;
-  }
+.album-image:hover {
+  opacity: 0.5;
 }
 
-.show-album-image:hover {
+.big-album-image:hover {
   opacity: 0.5;
 }
