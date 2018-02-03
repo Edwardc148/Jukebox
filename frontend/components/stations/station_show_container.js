@@ -5,6 +5,7 @@ import { receiveOneStation, receiveAllStations } from '../../actions/station_act
 import StationShow from './station_show';
 
 const mapStateToProps = (state, ownProps) => {
+  console.log(state);
   return {
     station: state.stations[ownProps.match.params.id],
     stations: Object.values(state.stations)

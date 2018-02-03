@@ -26,7 +26,7 @@ album4 = Album.create(name: "Epic Radio", artist_id: artist1.id, release_yr: 201
 
 album5 = Album.create(name: "Heavy Metal Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/Gb6xVGP.jpg')
 
-album6 = Album.create(name: "Emo Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
+album6 = Album.create(name: "Emo Radio", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/PnSeZX3.jpg')
 
 station1 = Station.create(name: "Nature", user_id: demo.id)
 station2 = Station.create(name: "Forest", user_id: demo.id)
@@ -36,13 +36,18 @@ station5 = Station.create(name: "Heavy Metal", user_id: demo.id)
 station6 = Station.create(name: "Emo", user_id: demo.id)
 
 song1 = Song.create(name: "Song1", album_id: album1.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
-song2 = Song.create(name: "Song1", album_id: album2.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3")
-song3 = Song.create(name: "Song1", album_id: album3.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3")
-song4 = Song.create(name: "Song1", album_id: album4.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
-song5 = Song.create(name: "Song1", album_id: album5.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
-song6 = Song.create(name: "Song1", album_id: album6.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
+song2 = Song.create(name: "Song2", album_id: album2.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3")
+song3 = Song.create(name: "Song3", album_id: album3.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3")
+song4 = Song.create(name: "Song4", album_id: album4.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
+song5 = Song.create(name: "Song5", album_id: album5.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
+song6 = Song.create(name: "Song6", album_id: album6.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
 
 StationSong.create(song_id: song1.id, station_id: station1.id)
+StationSong.create(song_id: song2.id, station_id: station1.id)
+StationSong.create(song_id: song3.id, station_id: station1.id)
+StationSong.create(song_id: song4.id, station_id: station1.id)
+StationSong.create(song_id: song5.id, station_id: station1.id)
+StationSong.create(song_id: song6.id, station_id: station1.id)
 StationSong.create(song_id: song2.id, station_id: station2.id)
 StationSong.create(song_id: song3.id, station_id: station3.id)
 StationSong.create(song_id: song4.id, station_id: station4.id)

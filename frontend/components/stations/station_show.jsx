@@ -9,14 +9,16 @@ class StationShow extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
-    this.props.fetchAllStations();
-    this.props.fetchOneStation(this.props.match.params.id);
-    console.log(this.props);
+    // this.props.fetchAllStations();
+    if (this.props.stations.length <= 1) {
+      this.props.fetchAllStations()
+        .then(this.props.fetchOneStation(this.props.match.params.id));
+    } else {
+      this.props.fetchOneStation(this.props.match.params.id);
+    }
   }
 
   render() {
-    console.log(this.props.station);
     if (this.props.station) {
       return (
         <div className="show-station-full-div">
