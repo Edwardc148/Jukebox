@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 class StationShow extends React.Component {
   constructor(props) {
     super(props);
+    this.state = this.props.station;
   }
 
   componentDidMount() {
@@ -26,7 +27,16 @@ class StationShow extends React.Component {
   }
 
   render() {
+
+    // if (this.props.station) {
+    //   const song = Object.values(this.state.songs)[0];
+    //   console.log(song);
+    // }
+
     if (this.props.station) {
+      console.log(this.props);
+      let current_song_id = this.props.station.songs[0];
+      console.log(current_song_id);
       return (
         <div className="show-station-full-div">
           <div className="show-station-index-div">
@@ -49,6 +59,9 @@ class StationShow extends React.Component {
                 src={this.props.station.image_url}>
               </img>
             </Link>
+            <p><span>{this.props.songs[current_song_id].name}</span></p>
+            <p><span>{this.props.songs[current_song_id].artist_name}</span></p>
+            <p><span>{this.props.songs[current_song_id].album_name}</span></p>
           </div>
         </div>
       );
