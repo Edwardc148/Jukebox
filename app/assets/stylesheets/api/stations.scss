@@ -18,11 +18,22 @@
   padding-top: 80px;
 }
 
+.radio-image {
+  position: relative;
+}
+
 .album-image {
+  position: relative;
   display: inline-block;
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  z-index: 0;
+}
+
+.album-image:hover {
+  opacity: 0.5;
+  // background:url(asset-path('play_button.png'));
 }
 
 .station-name {
@@ -83,4 +94,8 @@
   &:hover {
     margin-right: 100px;
   }
+}
+
+.show-album-image:hover {
+  opacity: 0.5;
 }
