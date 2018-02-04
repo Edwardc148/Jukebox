@@ -24,15 +24,13 @@ class StationShow extends React.Component {
   }
 
   render() {
+    let boolean = false;
+    if (this.props.station && this.props.station.songs) {
+      boolean = this.props.songs.hasOwnProperty(this.props.station.songs[0]);
+    }
 
-    console.log(this.props.songs);
-    console.log(this.props.station);
-    let boolean = this.props.songs.hasOwnProperty(this.props.station.songs[0]);
     if ((Object.values(this.props.songs).length >= 1) && (this.props.station !== undefined && boolean) ) {
-      console.log(this.props.songs);
       let current_song_id = this.props.station.songs[0];
-      console.log(current_song_id);
-      debugger;
       return (
         <div className="show-station-full-div">
           <div className="show-station-index-div">
