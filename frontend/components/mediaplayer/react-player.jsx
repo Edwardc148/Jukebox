@@ -11,16 +11,35 @@ class ReactMediaPlayer extends React.Component {
     };
   }
 
+  playPause () {
+    return (
+      () => {
+        this.setState({ playing: !this.state.playing });
+      }
+    );
+  }
+
   render (){
     return (
-      <div>
-        <ReactPlayer
-          className="react-player"
-          url={this.state.url}
-          width='20%'
-          height='20%'
-          playing={this.state.playing}
-        />
+      <div className="react-player-div">
+        <div className='react-player-container'>
+          <footer>
+            <a href="https://github.com/Edwardc148/Jukebox">Github</a>
+          </footer>
+          <ReactPlayer
+            className="react-player"
+            url={this.state.url}
+            width='100%'
+            height='100%'
+            playing={this.state.playing}
+          />
+        <div className="button-div">
+            <button
+              className="play-button"
+              onClick={this.playPause()}>
+            </button>
+          </div>
+        </div>
       </div>
     );
   }

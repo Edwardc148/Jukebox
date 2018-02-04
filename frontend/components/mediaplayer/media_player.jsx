@@ -7,9 +7,7 @@ class MediaPlayer extends React.Component {
     return (
       <div className="footer-media-player-div">
         <ReactMediaPlayer />
-        <footer>
-          <a href="https://github.com/Edwardc148/Jukebox">Github</a>
-        </footer>
+
       </div>
     );
   }

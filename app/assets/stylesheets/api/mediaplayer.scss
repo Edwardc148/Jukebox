@@ -1,7 +1,7 @@
 .footer-media-player-div a {
-  display: inline-block;
-  padding-top: 18px;
-  padding-left: 25px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   text-decoration: none;
 }
 
@@ -9,10 +9,36 @@
   color: black;
 }
 
+.react-player-div {
+  position: relative;
+  height: 90%;
+}
+
+.react-player-container {
+  // height: 100%;
+}
+
 .react-player {
-  position: absolute;
   display: inline-block;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+}
+.button-div {
+  text-align: center;
+  transform: translate(-0%,-20%);
+}
+
+.play-button {
+  // width: 100px;
+  // height: 100px;
+  // margin: 3px;
+  // padding: 6px 12px;
+  // border: 0;
+  // border-radius: 3px;
+  // outline: 0;
+  // background-color: lightgray;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 25px solid gray;
+  outline: none;
 }
