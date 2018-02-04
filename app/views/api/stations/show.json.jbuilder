@@ -15,4 +15,4 @@ json.current_station_songs do
       json.album_image_url song.album.image_url
     end
   end
-end 
+end

@@ -14,6 +14,7 @@ const fetchOneStation = (station) => {
   // console.log(station);
   // console.log(Object.values(station.current_station)[0]);
   // console.log(station.current_station_songs);
+  console.log(station);
   return {
     type: RECEIVE_ONE_STATION,
     station: Object.values(station.current_station)[0],

@@ -5,7 +5,7 @@ class ReactMediaPlayer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
       playing: false,
       volume: 1
     };
@@ -20,6 +20,11 @@ class ReactMediaPlayer extends React.Component {
   }
 
   render (){
+    console.log(this.state);
+    let playbutton = <i className="fas fa-play fa-2x" onClick={this.playPause()}></i>;
+    if (this.state.playing) {
+      playbutton = <i className="fas fa-pause fa-2x" onClick={this.playPause()}></i>;
+    }
     return (
       <div className="react-player-div">
         <div className='react-player-container'>
@@ -29,15 +34,16 @@ class ReactMediaPlayer extends React.Component {
           <ReactPlayer
             className="react-player"
             url={this.state.url}
-            width='100%'
-            height='100%'
+            width='0%'
+            height='0%'
             playing={this.state.playing}
           />
-        <div className="button-div">
-            <button
-              className="play-button"
-              onClick={this.playPause()}>
-            </button>
+          <div className="button-div">
+            <div className="playback-buttons" onClick={this.playPause()} >
+              {
+                playbutton
+              }
+            </div>
           </div>
         </div>
       </div>
