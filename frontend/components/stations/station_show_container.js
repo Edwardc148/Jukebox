@@ -8,6 +8,8 @@ const mapStateToProps = (state, ownProps) => {
   // console.log(state);
   // console.log(ownProps);
   console.log(state);
+  console.log(ownProps);
+  debugger;
   return {
     station: state.stations[ownProps.match.params.id],
     stations: Object.values(state.stations),

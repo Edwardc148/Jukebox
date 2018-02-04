@@ -94,7 +94,8 @@
 }
 
 .show-station-div {
-  margin-left: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .big-album-image {
@@ -103,6 +104,19 @@
   height: 300px;
   border-radius: 5px;
 }
+
+.show-song-name {
+  text-align: center;
+}
+
+.show-artist-name {
+  text-align: center;
+}
+
+.show-album-name {
+  text-align: center;
+}
+
 .album-image:hover {
   opacity: 0.5;
 }

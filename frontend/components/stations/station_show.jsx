@@ -10,17 +10,16 @@ class StationShow extends React.Component {
   }
 
   componentDidMount() {
-    if (this.props.stations.length <= 1) {
+
       this.props.fetchAllStations()
         .then(this.props.fetchOneStation(this.props.match.params.id));
-    } else {
-      this.props.fetchOneStation(this.props.match.params.id);
-    }
+
   }
 
   componentWillReceiveProps(nextProps) {
     if (this.props.match.params.id !== nextProps.match.params.id) {
-      nextProps.fetchOneStation(nextProps.match.params.id);
+      nextProps.fetchAllStations()
+        .then(nextProps.fetchOneStation(nextProps.match.params.id));
     }
   }
 
@@ -28,12 +27,12 @@ class StationShow extends React.Component {
 
     console.log(this.props.songs);
     console.log(this.props.station);
-    if ((this.props.songs !== {} ) && (this.props.station !== undefined) ) {
-      console.log(this.props);
-      console.log(this.props.station);
+    let boolean = this.props.songs.hasOwnProperty(this.props.station.songs[0]);
+    if ((Object.values(this.props.songs).length >= 1) && (this.props.station !== undefined && boolean) ) {
       console.log(this.props.songs);
       let current_song_id = this.props.station.songs[0];
       console.log(current_song_id);
+      debugger;
       return (
         <div className="show-station-full-div">
           <div className="show-station-index-div">
@@ -56,13 +55,26 @@ class StationShow extends React.Component {
                 src={this.props.station.image_url}>
               </img>
             </Link>
-            <p><span>{this.props.songs[current_song_id].name}</span></p>
-            <p><span>{this.props.songs[current_song_id].artist_name}</span></p>
-            <p><span>{this.props.songs[current_song_id].album_name}</span></p>
+            <p className="show-song-name">
+              <span>
+                {this.props.songs[current_song_id].name}
+              </span>
+            </p>
+            <p className="show-artist-name">
+              <span>
+                {this.props.songs[current_song_id].artist_name}
+              </span>
+            </p>
+            <p className="show-album-name">
+              <span>
+                {this.props.songs[current_song_id].album_name}
+              </span>
+            </p>
           </div>
         </div>
       );
     } else {
+      console.log(this.props);
       return (
         <h1>Loading</h1>
       );
