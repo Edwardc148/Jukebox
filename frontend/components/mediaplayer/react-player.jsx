@@ -4,27 +4,23 @@ import ReactPlayer from 'react-player';
 class ReactMediaPlayer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-      playing: false,
-      volume: 1
+    this.state = this.props;
+  }
+
+  componentWillReceiveProps(newProps) {
+    console.log(newProps);
+    this.setState({playback: newProps.playback});
+  }
+
+  togglePlayPause() {
+    return () => {
     };
   }
 
-  playPause () {
-    return (
-      () => {
-        this.setState({ playing: !this.state.playing });
-      }
-    );
-  }
-
   render (){
-    console.log(this.state);
-    let playbutton = <i className="fas fa-play fa-2x" onClick={this.playPause()}></i>;
-    if (this.state.playing) {
-      playbutton = <i className="fas fa-pause fa-2x" onClick={this.playPause()}></i>;
-    }
+    console.log(this.state.playback.playing);
+    let playbutton;
+
     return (
       <div className="react-player-div">
         <div className='react-player-container'>
@@ -33,16 +29,17 @@ class ReactMediaPlayer extends React.Component {
           </footer>
           <ReactPlayer
             className="react-player"
-            url={this.state.url}
+            url={this.state.playback.current_song_url}
             width='0%'
             height='0%'
-            playing={this.state.playing}
+            playing={this.props.playback.playing}
           />
           <div className="button-div">
-            <div className="playback-buttons" onClick={this.playPause()} >
-              {
-                playbutton
+            <div className="playback-buttons" >
+              <span><i className="fas fa-redo-alt fa-2x"></i></span>
+              {this.state.playback.playing ? <span onClick={this.props.togglePlayPause}><i className="fas fa-pause fa-2x" onClick={this.props.togglePlayPause} ></i></span> : <span onClick={this.props.togglePlayPause}><i className="fas fa-play fa-2x" onClick={this.props.togglePlayPause} ></i></span>
               }
+              <span><i className="fas fa-fast-forward fa-2x"></i></span>
             </div>
           </div>
         </div>

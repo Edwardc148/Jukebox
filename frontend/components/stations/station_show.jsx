@@ -72,7 +72,6 @@ class StationShow extends React.Component {
         </div>
       );
     } else {
-      console.log(this.props);
       return (
         <h1>Loading</h1>
       );

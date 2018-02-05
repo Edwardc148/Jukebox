@@ -8,7 +8,7 @@ const mapStateToProps = (state, ownProps) => {
   return {
     station: state.stations[ownProps.match.params.id],
     stations: Object.values(state.stations),
-    songs: state.songs
+    songs: state.songs,
   };
 };
 

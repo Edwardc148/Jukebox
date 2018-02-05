@@ -39,8 +39,8 @@ song1 = Song.create(name: "Song1", album_id: album1.id, duration: 130, song_url:
 song2 = Song.create(name: "Song2", album_id: album2.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3")
 song3 = Song.create(name: "Song3", album_id: album3.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3")
 song4 = Song.create(name: "Song4", album_id: album4.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
-song5 = Song.create(name: "Song5", album_id: album5.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
-song6 = Song.create(name: "Song6", album_id: album6.id, duration: 130, song_url: "https://www.youtube.com/watch?v=9E6b3swbnWg")
+song5 = Song.create(name: "Song5", album_id: album5.id, duration: 130, song_url: "https://www.youtube.com/watch?v=UiwvwUwSE7k")
+song6 = Song.create(name: "Song6", album_id: album6.id, duration: 130, song_url: "https://www.youtube.com/watch?v=WsptdUFthWI")
 
 StationSong.create(song_id: song1.id, station_id: station1.id)
 StationSong.create(song_id: song2.id, station_id: station1.id)
