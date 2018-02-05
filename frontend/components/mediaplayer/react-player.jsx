@@ -100,7 +100,7 @@ class ReactMediaPlayer extends React.Component {
               <span className="next-button" onClick={this.props.nextSong}><i className="fas fa-fast-forward fa-2x next-button"></i></span>
 
               <div className="duration">
-                <span className="played">{this.stringify(this.state.playedSeconds)}</span>
+                <span className="played">{this.stringify(this.state.playedSeconds)}  |</span>
                 <span className="song-duration">{this.stringify(this.state.duration)}</span>
               </div>
             </div>
