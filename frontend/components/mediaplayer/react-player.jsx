@@ -8,17 +8,10 @@ class ReactMediaPlayer extends React.Component {
   }
 
   componentWillReceiveProps(newProps) {
-    console.log(newProps);
     this.setState({playback: newProps.playback});
   }
 
-  togglePlayPause() {
-    return () => {
-    };
-  }
-
   render (){
-    console.log(this.state.playback.playing);
     let playbutton;
 
     return (
@@ -36,10 +29,10 @@ class ReactMediaPlayer extends React.Component {
           />
           <div className="button-div">
             <div className="playback-buttons" >
-              <span><i className="fas fa-redo-alt fa-2x"></i></span>
+              <span className="repeat"><i className="fas fa-redo-alt fa-2x"></i></span>
               {this.state.playback.playing ? <span onClick={this.props.togglePlayPause}><i className="fas fa-pause fa-2x" onClick={this.props.togglePlayPause} ></i></span> : <span onClick={this.props.togglePlayPause}><i className="fas fa-play fa-2x" onClick={this.props.togglePlayPause} ></i></span>
               }
-              <span><i className="fas fa-fast-forward fa-2x"></i></span>
+              <span className="next-button" onClick={this.props.nextSong}><i className="fas fa-fast-forward fa-2x"></i></span>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import MediaPlayer from './media_player';
-import { togglePlayPause } from '../../actions/media_actions';
+import { togglePlayPause, nextSong } from '../../actions/media_actions';
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -13,7 +13,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    togglePlayPause: () => dispatch(togglePlayPause())
+    togglePlayPause: () => dispatch(togglePlayPause()),
+    nextSong: () => dispatch(nextSong())
   };
 };
 
