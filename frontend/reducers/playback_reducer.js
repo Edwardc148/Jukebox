@@ -4,9 +4,9 @@ import _ from 'lodash';
 
 let defaultState = {
   playing: true,
-  current_song: null,
-  queue_songs: null,
-  current_song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+  current_song: "",
+  queue_songs: [],
+  current_song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_Fizzer140C-05.mp3",
 };
 
 export default (state = defaultState, action) => {
