@@ -2,6 +2,7 @@ import React from 'react';
 import StationShowContainer from './station_show_container';
 import StationShowIndexItem from './station_show_index_item';
 import { Link } from 'react-router-dom';
+import AwesomeLoader from '../loader';
 
 class StationShow extends React.Component {
   constructor(props) {
@@ -73,7 +74,7 @@ class StationShow extends React.Component {
       );
     } else {
       return (
-        <h1>Loading</h1>
+        <AwesomeLoader />
       );
     }
   }
