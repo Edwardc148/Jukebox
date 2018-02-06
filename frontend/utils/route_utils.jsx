@@ -24,9 +24,22 @@ const Protected = ({ loggedIn, path, component: Component}) => (
   />
 );
 
+const Footer = ({ loggedIn, path, component1: Component1, component2: Component2}) => (
+  <Route
+    path={path}
+    render={props => (
+      loggedIn ? <Component2 {...props} /> : <Component1 {...props} />
+    )}
+  />
+);
+
 export const AuthRoute = withRouter(connect(
   mapStateToProps
 )(Auth));
 export const ProtectedRoute = withRouter(connect(
   mapStateToProps
 )(Protected));
+
+export const ConditionalMediaRoute = withRouter(connect(
+  mapStateToProps
+)(Footer));
