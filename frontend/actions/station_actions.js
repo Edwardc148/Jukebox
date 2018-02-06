@@ -27,3 +27,8 @@ export const receiveOneStation = (id) => dispatch => (
   StationsAPIUtils.fetchOneStation(id)
     .then(serverStation => dispatch(fetchOneStation(serverStation)))
 );
+
+export const createOneStation = (station) => dispatch => (
+  StationsAPIUtils.createOneStation(station)
+    .then(serverStation => dispatch(fetchOneStation(serverStation)))
+);

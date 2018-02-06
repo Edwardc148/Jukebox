@@ -28,6 +28,9 @@ export default ( { currentUser, logout, path} ) => {
   return (
     <header className="nav-bar">
       <Link className="jukebox-logo" to={"/"}>jukebox</Link>
+      <span>
+        <input className="search-bar" type="search" placeholder="Create A Station"></input>
+      </span>
       <div>
         {display}
       </div>

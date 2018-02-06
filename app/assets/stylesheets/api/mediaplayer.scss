@@ -58,13 +58,14 @@
 
 .played {
   margin-right: 4px;
+  color: lightgray;
 }
 
 .input-bar {
-  width: 100%;
+  width: 99%;
   height: 1px;
   position: absolute;
-  top: 0;
+  top: -2px;;
 }
 
 .seek-bar {
@@ -91,6 +92,30 @@
   margin-top: 0.75%;
   margin-left: 6%;
 }
+
+.song-duration {
+  color: lightgray;
+}
 // .svg-inline--fa {
 //   color:white;
 // }
+
+input[type=range] {
+  -webkit-appearance:none;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 15px;
+  width: 10px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: 0px;
+}

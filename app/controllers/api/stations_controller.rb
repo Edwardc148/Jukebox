@@ -9,6 +9,7 @@ class Api::StationsController < ApplicationController
     @station = Station.new(station_params)
     @station.user_id = current_user.id
     if @station.save
+      @station.song_ids = Song.all.pluck(:id)
       render :show
     else
       render json: @user.errors.full_messages, status: 422

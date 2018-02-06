@@ -9,3 +9,11 @@ export const fetchOneStation = (id) => {
     url: `/api/stations/${id}`
   });
 };
+
+export const createOneStation = (station) => {
+  return $.ajax({
+    url: '/api/stations',
+    method: 'POST',
+    data: { station: station }
+  });
+};
