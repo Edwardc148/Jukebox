@@ -6,7 +6,7 @@ let defaultState = {
   playing: true,
   current_song: "",
   queue_songs: [],
-  current_song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/Chainsmokers_Closer_Cover.mp3",
+  current_song_url: "",
 };
 
 export default (state = defaultState, action) => {

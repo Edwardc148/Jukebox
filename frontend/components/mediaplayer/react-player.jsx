@@ -1,14 +1,23 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import merge from 'lodash';
 
 class ReactMediaPlayer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.props;
+    this.state = this.mergeProps(props);
     this.onProgress = this.onProgress.bind(this);
     this.onDuration = this.onDuration.bind(this);
     this.stringify = this.stringify.bind(this);
     this.repeat = this.repeat.bind(this);
+    this.muted = this.muted.bind(this);
+  }
+
+  mergeProps(props) {
+    let merged_obj = Object.assign({}, props);
+    merged_obj['played'] = 0;
+    merged_obj['muted'] = false;
+    return merged_obj;
   }
 
   componentWillReceiveProps(newProps) {
@@ -25,7 +34,6 @@ class ReactMediaPlayer extends React.Component {
   }
 
   onProgress(state) {
-    console.log(state);
     this.setState({'playedSeconds': state.playedSeconds});
     this.setState({'played': state.played});
   }
@@ -36,6 +44,10 @@ class ReactMediaPlayer extends React.Component {
 
   repeat(){
     this.player.seekTo(0);
+  }
+
+  muted(){
+    this.state.muted = !this.state.muted;
   }
 
   ref(){
@@ -84,6 +96,7 @@ class ReactMediaPlayer extends React.Component {
             url={this.state.playback.current_song_url}
             width='0%'
             height='0%'
+            muted={this.state.muted}
             playing={this.props.playback.playing}
             onProgress={this.onProgress}
             onDuration={this.onDuration}
@@ -113,6 +126,22 @@ class ReactMediaPlayer extends React.Component {
                 <span className="played">{this.stringify(this.state.playedSeconds)}  |</span>
                 <span className="song-duration">{this.stringify(this.state.duration)}</span>
               </div>
+
+              <span>
+                {this.state.muted ?
+                  <span onClick={this.muted} className="mute-button">
+                    <i className="fas fa-volume-off mute"></i>
+                  </span>
+                  :
+                  null
+                }
+
+                {!this.state.muted ?
+                  <span onClick={this.muted} className="volume-on"><i className="fas fa-volume-up volume"></i></span>
+                  :
+                  null
+                }
+              </span>
             </div>
           </div>
         </div>
