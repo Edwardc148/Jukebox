@@ -9,7 +9,6 @@ export default ( { currentUser, logout, path} ) => {
         <Link className="button-now-playing" to={"/stations"}>Now Playing</Link>
         <Link className="button-my-stations" to={"/stations"}>My Stations</Link>
         <button className="button-logout" onClick={logout}>Logout</button>
-
       </div>
     );
   } else {

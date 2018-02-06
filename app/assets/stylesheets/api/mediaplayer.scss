@@ -59,6 +59,18 @@
 .played {
   margin-right: 4px;
 }
+
+.input-bar {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+}
+
+.seek-bar {
+  display: inline-block;
+  width: 100%;
+}
 // .svg-inline--fa {
 //   color:white;
 // }

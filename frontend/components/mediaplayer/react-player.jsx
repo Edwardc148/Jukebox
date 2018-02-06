@@ -8,6 +8,7 @@ class ReactMediaPlayer extends React.Component {
     this.onProgress = this.onProgress.bind(this);
     this.onDuration = this.onDuration.bind(this);
     this.stringify = this.stringify.bind(this);
+    this.repeat = this.repeat.bind(this);
   }
 
   componentWillReceiveProps(newProps) {
@@ -24,11 +25,17 @@ class ReactMediaPlayer extends React.Component {
   }
 
   onProgress(state) {
+    console.log(state);
     this.setState({'playedSeconds': state.playedSeconds});
+    this.setState({'played': state.played});
   }
 
   onDuration(duration) {
     this.setState({'duration': duration});
+  }
+
+  repeat(){
+    this.player.seekTo(0);
   }
 
   ref(){
@@ -81,9 +88,12 @@ class ReactMediaPlayer extends React.Component {
             onProgress={this.onProgress}
             onDuration={this.onDuration}
           />
+          <div className="seek-bar">
+            <input className="input-bar" type="range" min={0} max={1} step="any" value={this.state.played}></input>
+          </div>
           <div className="button-div">
             <div className="playback-buttons" >
-              <span className="repeat"><i className="fas fa-redo-alt fa-2x repeat"></i></span>
+              <span onClick={this.repeat} className="repeat"><i className="fas fa-redo-alt fa-2x repeat"></i></span>
 
 
           {this.state.playback.playing ?

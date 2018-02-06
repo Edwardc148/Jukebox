@@ -11,6 +11,8 @@ User.destroy_all
 Station.destroy_all
 Artist.destroy_all
 Album.destroy_all
+Song.destroy_all
+StationSong.destroy_all
 
 demo = User.create(name: "Demo", email: "demo@gmail.com", password: "password")
 
@@ -48,8 +50,24 @@ StationSong.create(song_id: song3.id, station_id: station1.id)
 StationSong.create(song_id: song4.id, station_id: station1.id)
 StationSong.create(song_id: song5.id, station_id: station1.id)
 StationSong.create(song_id: song6.id, station_id: station1.id)
+
+StationSong.create(song_id: song6.id, station_id: station2.id)
+StationSong.create(song_id: song5.id, station_id: station2.id)
+StationSong.create(song_id: song4.id, station_id: station2.id)
+StationSong.create(song_id: song3.id, station_id: station2.id)
 StationSong.create(song_id: song2.id, station_id: station2.id)
+
+StationSong.create(song_id: song5.id, station_id: station3.id)
 StationSong.create(song_id: song3.id, station_id: station3.id)
+StationSong.create(song_id: song4.id, station_id: station3.id)
+StationSong.create(song_id: song6.id, station_id: station3.id)
+
 StationSong.create(song_id: song4.id, station_id: station4.id)
+StationSong.create(song_id: song2.id, station_id: station4.id)
+StationSong.create(song_id: song5.id, station_id: station4.id)
+
+StationSong.create(song_id: song6.id, station_id: station5.id)
 StationSong.create(song_id: song5.id, station_id: station5.id)
-StationSong.create(song_id: song6.id, station_id: station6.id)
+
+StationSong.create(song_id: song4.id, station_id: station6.id)
+StationSong.create(song_id: song3.id, station_id: station6.id)

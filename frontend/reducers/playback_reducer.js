@@ -6,7 +6,7 @@ let defaultState = {
   playing: true,
   current_song: "",
   queue_songs: [],
-  current_song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_Fizzer140C-05.mp3",
+  current_song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/Chainsmokers_Closer_Cover.mp3",
 };
 
 export default (state = defaultState, action) => {
