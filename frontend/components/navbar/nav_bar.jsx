@@ -28,7 +28,8 @@ export default ( { currentUser, logout, path} ) => {
   return (
     <header className="nav-bar">
       <Link className="jukebox-logo" to={"/"}>jukebox</Link>
-      <span>
+      <span className="search-bar-container">
+        <span className="fas fa-search search-icon"></span>
         <input className="search-bar" type="search" placeholder="Create A Station"></input>
       </span>
       <div>

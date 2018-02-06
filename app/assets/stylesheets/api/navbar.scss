@@ -98,5 +98,29 @@
 }
 
 .search-bar {
+  -webkit-appearance: none;
   text-align: center;
+  width: 250px;
+  height: 35px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+
+input[type=search]::webkit-searchfield {
+	-webkit-appearance: none;
+}
+
+.search-bar-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 29px;
+  left: 15px;
+}
+
+input[type=search]::webkit-searchfield-cancel-button {
+  -webkit-appearance: none;
+  height: 20px;
 }

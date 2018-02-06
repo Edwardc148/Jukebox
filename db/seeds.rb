@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # user1 = User.create(email: "demo@gmail.com", name: "Demo", )
+require 'faker'
 
 User.destroy_all
 Station.destroy_all
@@ -16,33 +17,33 @@ StationSong.destroy_all
 
 demo = User.create(name: "Demo", email: "demo@gmail.com", password: "password")
 
-artist1 = Artist.create(name: "Demo Artist", description: "This is a demo description")
+artist1 = Artist.create(name: Faker::RockBand.unique.name, description: "This is a demo description")
 
-album1 = Album.create(name: "Nature Album", artist_id: artist1.id, release_yr: 2018, image_url: 'https://i.imgur.com/sduLRvf.jpg')
+album1 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist1.id, release_yr: 2018, image_url: 'https://i.imgur.com/sduLRvf.jpg')
 
-album2 = Album.create(name: "Forest Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
+album2 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/tXtwrPd.jpg')
 
-album3 = Album.create(name: "Raindrops Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/IVyU5Im.jpg')
+album3 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/IVyU5Im.jpg')
 
-album4 = Album.create(name: "Epic Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/QguApMA.jpg')
+album4 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/QguApMA.jpg')
 
-album5 = Album.create(name: "Heavy Metal Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/Gb6xVGP.jpg')
+album5 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/Gb6xVGP.jpg')
 
-album6 = Album.create(name: "Emo Album", artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/PnSeZX3.jpg')
+album6 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist1.id, release_yr: 2017, image_url: 'https://i.imgur.com/PnSeZX3.jpg')
 
-station1 = Station.create(name: "Nature", user_id: demo.id)
-station2 = Station.create(name: "Forest", user_id: demo.id)
-station3 = Station.create(name: "Raindrops", user_id: demo.id)
-station4 = Station.create(name: "Epic", user_id: demo.id)
-station5 = Station.create(name: "Heavy Metal", user_id: demo.id)
+station1 = Station.create(name: Faker::Ancient.unique.primordial, user_id: demo.id)
+station2 = Station.create(name: Faker::Ancient.unique.primordial, user_id: demo.id)
+station3 = Station.create(name: Faker::Ancient.unique.primordial, user_id: demo.id)
+station4 = Station.create(name: Faker::Ancient.unique.primordial, user_id: demo.id)
+station5 = Station.create(name: Faker::Ancient.unique.primordial, user_id: demo.id)
 station6 = Station.create(name: "Emo", user_id: demo.id)
 
-song1 = Song.create(name: "Song1", album_id: album1.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
-song2 = Song.create(name: "Song2", album_id: album2.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3")
-song3 = Song.create(name: "Song3", album_id: album3.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3")
-song4 = Song.create(name: "Song4", album_id: album4.id, duration: 130, song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_DubPad145G-01.mp3")
-song5 = Song.create(name: "Song5", album_id: album5.id, duration: 130, song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_BeatF145-01.mp3")
-song6 = Song.create(name: "Song6", album_id: album6.id, duration: 130, song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_Fizzer140C-05.mp3")
+song1 = Song.create(name: Faker::RockBand.unique.name, album_id: album1.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3")
+song2 = Song.create(name: Faker::RockBand.unique.name, album_id: album2.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3")
+song3 = Song.create(name: Faker::RockBand.unique.name, album_id: album3.id, duration: 130, song_url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3")
+song4 = Song.create(name: Faker::RockBand.unique.name, album_id: album4.id, duration: 130, song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_DubPad145G-01.mp3")
+song5 = Song.create(name: Faker::RockBand.unique.name, album_id: album5.id, duration: 130, song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_BeatF145-01.mp3")
+song6 = Song.create(name: Faker::RockBand.unique.name, album_id: album6.id, duration: 130, song_url: "http://cdn.mos.musicradar.com/audio/samples/dubstep-demo-loops/DS_Fizzer140C-05.mp3")
 
 StationSong.create(song_id: song1.id, station_id: station1.id)
 StationSong.create(song_id: song2.id, station_id: station1.id)
