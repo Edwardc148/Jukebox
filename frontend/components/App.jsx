@@ -6,6 +6,7 @@ import MediaPlayerContainer from './mediaplayer/media_player_container';
 import Home from './home/home';
 import StationsIndexContainer from './stations/stations_index_container';
 import StationShowContainer from './stations/station_show_container';
+import DefaultFootContainer from '.home/foot_container';
 import { Route, Switch } from 'react-router-dom';
 import {
   AuthRoute,
@@ -23,7 +24,11 @@ const App = () => (
       <ProtectedRoute path="/stations" component={StationsIndexContainer} />
       <Route component={Home} />
     </Switch>
-    <Route path="/" component={MediaPlayerContainer} />
+    <Switch>
+      <ProtectedRoute path="/" component={MediaPlayerContainer} />
+      <AuthRoute path="/" component={DefaultFootContainer}
+      />
+    </Switch>
   </div>
 );
 
