@@ -9,6 +9,7 @@ const mapStateToProps = (state, ownProps) => {
     station: state.stations[ownProps.match.params.id],
     stations: Object.values(state.stations),
     songs: state.songs,
+    playback: state.playback
   };
 };
 

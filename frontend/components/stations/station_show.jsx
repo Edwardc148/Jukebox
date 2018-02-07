@@ -51,22 +51,22 @@ class StationShow extends React.Component {
               className="image-to-stations" to={`/stations/`}>
               <img
                 className="big-album-image"
-                src={this.props.station.image_url}>
+                src={this.props.songs[this.props.playback.current_song].album_image_url}>
               </img>
             </Link>
             <p className="show-song-name">
               <span>
-                {this.props.songs[current_song_id].name}
+                {this.props.songs[this.props.playback.current_song].name}
               </span>
             </p>
             <p className="show-artist-name">
               <span>
-                {this.props.songs[current_song_id].artist_name}
+                {this.props.songs[this.props.playback.current_song].artist_name}
               </span>
             </p>
             <p className="show-album-name">
               <span>
-                {this.props.songs[current_song_id].album_name}
+                {this.props.songs[this.props.playback.current_song].album_name}
               </span>
             </p>
           </div>

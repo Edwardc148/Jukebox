@@ -8,11 +8,11 @@ class StationsIndex extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
     this.props.fetchAllStations();
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="station-index-div">
         <ul className="station-index">
