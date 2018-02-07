@@ -55,6 +55,10 @@
   // margin-left: 50px;
 }
 
+.show-station-index-div {
+
+}
+
 .show-station-index-item {
   display: flex;
   flex-direction: column;
@@ -75,23 +79,33 @@
 
 .show-radio-image {
   height: 100%;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
   position: absolute;
   left: 0;
   margin-left: 50px;
   // height: 50px;
+
+  width: 200px;
+  border: 1px solid lightskyblue;
+  border-radius: 5px;
+  background: cornflowerblue;
 }
 
 .show-album-image {
-  width: 200px;
-  height: 100%;
+  // width: 200px;
+  // height: 100%;
   border-radius: 5px;
+
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
 }
 
 .show-station-name {
   color: white;
   position: absolute;
-  top: 0%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 38%);
 }

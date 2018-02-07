@@ -6,7 +6,7 @@ class DefaultMediaContainer extends React.Component {
     return (
       <div className="footer-media-player-div">
         <footer className="github-links">
-          <a href="https://github.com/Edwardc148/Jukebox">Github</a>
+          <a className="github-text" href="https://github.com/Edwardc148/Jukebox">Github</a>
         </footer>
       </div>
     );

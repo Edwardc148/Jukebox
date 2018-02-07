@@ -88,7 +88,7 @@ class ReactMediaPlayer extends React.Component {
       <div className="react-player-div">
         <div className='react-player-container'>
           <footer>
-            <a href="https://github.com/Edwardc148/Jukebox">Github</a>
+            <a className="github-text" href="https://github.com/Edwardc148/Jukebox">Github</a>
           </footer>
           <ReactPlayer
             ref={this.ref()}
