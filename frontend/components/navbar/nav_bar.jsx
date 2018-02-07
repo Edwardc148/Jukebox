@@ -1,40 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Search from './search';
 
-export default ( { currentUser, logout, path} ) => {
+export default ( { currentUser, logout, path, createStation } ) => {
   let display;
   if (currentUser) {
       display = (
       <div>
         <Link className="button-now-playing" to={"/stations"}>Now Playing</Link>
         <Link className="button-my-stations" to={"/stations"}>My Stations</Link>
-        <button className="button-logout" onClick={logout}>Logout</button>
-      </div>
-    );
-  } else {
-    let link;
-    if (path === '/signup') {
-      link = <Link className="button-login" to={"/login"}>Log In</Link>;
-    } else {
-      link = <Link className="button-signup" to={"/signup"}>Sign Up</Link>;
-    }
-    display = (
-      <div>
-        {link}
+
       </div>
     );
   }
 
   return (
     <header className="nav-bar">
-      <Link className="jukebox-logo" to={"/"}>jukebox</Link>
       <span className="search-bar-container">
-        <span className="fas fa-search search-icon"></span>
-        <input className="search-bar" type="search" placeholder="Create A Station"></input>
+        <Search currentUser={currentUser} logout={logout} path={path} createStation={createStation} />
       </span>
       <div>
         {display}
       </div>
+      <Link className="jukebox-logo-loggedIn" to={"/"}>jukebox</Link>
+      <button className="button-logout" onClick={logout}>Logout</button>
     </header>
   );
 };

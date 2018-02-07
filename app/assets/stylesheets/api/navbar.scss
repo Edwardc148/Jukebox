@@ -14,6 +14,17 @@
   margin: 15px 0px 0px 50px
 }
 
+.jukebox-logo-loggedIn {
+  display: inline-block;
+  position: absolute;
+  right: 150px;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 17px 0px 0px 50px
+}
+
 // Buttons
 
 .button-signup {
@@ -62,7 +73,7 @@
   text-decoration: none;
   color: black;
   position: absolute;
-  left: 180px;
+  left: 50px;
   top: 25px;
 }
 
@@ -70,7 +81,7 @@
   text-decoration: none;
   color: black;
   position: absolute;
-  left: 300px;
+  left: 180px;
   top: 25px;
 }
 
@@ -97,30 +108,44 @@
   background: lightblue;
 }
 
-.search-bar {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 250px;
-  height: 35px;
-  border-radius: 50px;
-  letter-spacing: 2px;
-}
-
-input[type=search]::webkit-searchfield {
-	-webkit-appearance: none;
-}
+// .search-bar {
+//   -webkit-appearance: none;
+//   text-align: center;
+//   width: 250px;
+//   height: 35px;
+//   border-radius: 50px;
+//   letter-spacing: 2px;
+//   position: absolute;
+// }
+//
+// input[type=search]::webkit-searchfield {
+// 	-webkit-appearance: none;
+// }
 
 .search-bar-container {
   position: relative;
+  margin-left: auto;
+  margin-right: 51%;
 }
 
-.search-icon {
+.search {
+  width: 250px;
+  height: 22px;
   position: absolute;
-  top: 29px;
-  left: 15px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
-input[type=search]::webkit-searchfield-cancel-button {
-  -webkit-appearance: none;
-  height: 20px;
-}
+
+// .search-icon {
+//   position: absolute;
+//   top: 29px;
+//   left: 15px;
+// }
+//
+// input[type=search]::webkit-searchfield-cancel-button {
+//   -webkit-appearance: none;
+//   height: 20px;
+// }

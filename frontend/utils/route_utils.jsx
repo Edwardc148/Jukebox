@@ -6,6 +6,15 @@ const mapStateToProps = (state) => ({
   loggedIn: Boolean(state.session.currentUser)
 });
 
+const Navigation = ({loggedIn, path, component1:Component1, component:Component2}) => (
+  <Route
+    path={path}
+    render={props => (
+      loggedIn ? <Component1 {...props} /> : <Component2 {...props} />
+    )}
+  />
+);
+
 const Auth = ({ loggedIn, path, component: Component }) => (
   <Route
     path={path}
@@ -43,3 +52,7 @@ export const ProtectedRoute = withRouter(connect(
 export const ConditionalMediaRoute = withRouter(connect(
   mapStateToProps
 )(Footer));
+
+export const NavigationRoute = withRouter(connect(
+  mapStateToProps
+)(Navigation));
