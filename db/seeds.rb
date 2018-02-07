@@ -88,7 +88,7 @@ song9 = Song.create(name: "Rather Be", album_id: album9.id, duration: 130, song_
 
 song10 = Song.create(name: "Run It!", album_id: album10.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/runnit.mp3")
 
-song11 = Song.create(name: "Scare To Be Lonely - Remix", album_id: album11.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/scrd.mp3")
+song11 = Song.create(name: "Scared To Be Lonely - Remix", album_id: album11.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/scrd.mp3")
 
 song12 = Song.create(name: "Sk8ter Boi", album_id: album12.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/sk8.mp3")
 

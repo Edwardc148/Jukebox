@@ -7,6 +7,7 @@ let defaultState = {
   current_song: "",
   queue_songs: [],
   current_song_url: "",
+  current_station: ""
 };
 
 export default (state = defaultState, action) => {
@@ -20,6 +21,7 @@ export default (state = defaultState, action) => {
       newState['queue_songs'] = _.shuffle(Object.values(action.songs));
       newState['current_song'] = song_keys[0];
       newState['current_song_url'] = action.songs[song_keys[0]].song_url;
+      newState['current_station'] = action.current_station;
       return newState;
     case CHANGE_PLAYBACK:
       newState = _.merge({}, state);

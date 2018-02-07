@@ -61,6 +61,7 @@ class Search extends React.Component {
             createStation={this.props.createStation}
             results={this.state.search_result}
             currentSearch={this.state.search_value}
+            clearState={this.clearState}
           />
         :
           null

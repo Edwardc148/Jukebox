@@ -3,6 +3,7 @@ import StationShowContainer from './station_show_container';
 import StationShowIndexItem from './station_show_index_item';
 import { Link } from 'react-router-dom';
 import AwesomeLoader from '../loader';
+import _ from 'lodash';
 
 class StationShow extends React.Component {
   constructor(props) {
@@ -11,10 +12,10 @@ class StationShow extends React.Component {
   }
 
   componentDidMount() {
-
+    if (_.isEmpty(this.props.songs)) {
       this.props.fetchAllStations()
         .then(this.props.fetchOneStation(this.props.match.params.id));
-
+    }
   }
 
   componentWillReceiveProps(nextProps) {

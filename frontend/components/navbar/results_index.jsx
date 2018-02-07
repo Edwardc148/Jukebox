@@ -31,6 +31,7 @@ class ResultsIndex extends React.Component {
                   return (
                     <ResultsIndexItem key={artistObject.id} artist={artistObject}
                     createStation={this.props.createStation}
+                    ownProps={this.props.ownProps}
                     />
                   );
                 })}

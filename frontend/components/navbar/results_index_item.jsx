@@ -6,10 +6,13 @@ class ResultsIndexItem extends React.Component {
   }
 
   render(){
-    console.log(this.props);
+
     if (this.props.artist) {
       return (
-        <div className="search-index-item" onClick={()=> this.props.createStation({name:`${this.props.artist.name}`})}>
+        <div className="search-index-item" onClick={()=> this.props.createStation({name:`${this.props.artist.name}`})
+          .then((serverS) => {
+            this.props.ownProps.history.push(`/stations/${serverS.station.id}`);
+            this.props.ownProps.clearState();})}>
           {this.props.artist.name}
         </div>
       );

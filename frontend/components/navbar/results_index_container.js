@@ -5,7 +5,7 @@ import ResultsIndex from './results_index';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-
+    ownProps: ownProps
   };
 };
 

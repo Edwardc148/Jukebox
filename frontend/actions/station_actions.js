@@ -11,10 +11,12 @@ const fetchAllStations = (stations) => {
 };
 
 const fetchOneStation = (station) => {
+  console.log(station);
   return {
     type: RECEIVE_ONE_STATION,
     station: Object.values(station.current_station)[0],
-    songs: station.current_station_songs
+    songs: station.current_station_songs,
+    current_station: Object.values(station.current_station)[0].id
   };
 };
 

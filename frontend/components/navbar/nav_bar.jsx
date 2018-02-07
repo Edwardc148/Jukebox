@@ -2,12 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Search from './search';
 
-export default ( { currentUser, logout, path, createStation } ) => {
+export default ( { currentUser, logout, path, createStation, currentStation } ) => {
   let display;
+  console.log(currentStation);
   if (currentUser) {
       display = (
       <div>
-        <Link className="button-now-playing" to={"/stations"}>Now Playing</Link>
+        <Link className="button-now-playing" to={`/stations/${currentStation}`}>Now Playing</Link>
         <Link className="button-my-stations" to={"/stations"}>My Stations</Link>
 
       </div>

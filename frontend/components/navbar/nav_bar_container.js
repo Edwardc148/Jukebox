@@ -8,8 +8,9 @@ import { withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-  currentUser: state.session.currentUser,
-  path: ownProps.location.pathname
+    currentUser: state.session.currentUser,
+    path: ownProps.location.pathname,
+    currentStation: state.playback.current_station
   };
 };
 
