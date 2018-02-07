@@ -1,15 +1,17 @@
 import React from 'react';
 import OnClickOutside from 'react-click-outside';
+import _ from 'lodash';
+import * as SearchAPIUtils from '../../utils/search_utils';
 
 class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.mergeProps(props);
     this.mergeProps = this.mergeProps.bind(this);
-    // this.textChange = this.textChange.bind(this);
     this.clearState = this.clearState.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
     this.handleUserSearch = this.handleUserSearch.bind(this);
+    this.search = this.search.bind(this);
   }
 
   mergeProps(props) {
@@ -19,9 +21,19 @@ class Search extends React.Component {
     return newMergeObj;
   }
 
-  // textChange(e) {
-  //   this.setState({'search_value': e.target.value});
-  // }
+  componentDidMount(){
+   document.getElementById('search').focus();
+   document.getElementById('search').addEventListener('keyup', _.debounce(this.search, 250) );
+  }
+
+  search(){
+    console.log(this.state.search_value);
+    if (this.state.search_value) {
+      SearchAPIUtils.search(this.state.search_value).then(searchResult => {
+        console.log(searchResult);
+      });
+    }
+  }
 
   clearState() {
     this.setState({'search_value': ''});
@@ -36,14 +48,12 @@ class Search extends React.Component {
     if (e.target.value) {
       this.setState({'search_value': e.target.value});
     }
-    console.log(this.state);
   }
 
   render () {
     return (
       <div className="search-bar-div">
-        <input onChange={this.handleUserSearch} className="search" type="text" placeholder="Create A Station" value={this.state.search_value}></input>
-
+        <input id="search" onChange={this.handleUserSearch} className="search" type="text" placeholder="Create A Station" value={this.state.search_value}></input>
       </div>
     );
 
