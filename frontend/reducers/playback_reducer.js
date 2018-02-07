@@ -15,9 +15,9 @@ export default (state = defaultState, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_ONE_STATION:
-      let song_keys = Object.keys(action.songs);
+      let song_keys = _.shuffle(Object.keys(action.songs));
       newState = _.merge({}, state);
-      newState['queue_songs'] = Object.values(action.songs);
+      newState['queue_songs'] = _.shuffle(Object.values(action.songs));
       newState['current_song'] = song_keys[0];
       newState['current_song_url'] = action.songs[song_keys[0]].song_url;
       return newState;
