@@ -22,20 +22,20 @@ class ResultsIndex extends React.Component {
       if (_.isEmpty(this.props.results)) {
         return (
           <div className="search-index-item-div">
-            <div className="search-index-item">
-              No Results Found
+            <div className="no-results">
+              <h3>No Results Found</h3>
             </div>
             <div className="suggestions">
               <h3>Suggested Stations</h3>
-              <div className="faker" onClick={()=> this.props.createStation({name:`${faker1}`})
+              <div className="faker1 faker" onClick={()=> this.props.createStation({name:`${faker1}`})
                 .then((serverS) => {
                   this.props.ownProps.history.push(`/stations/${serverS.station.id}`);
                   this.props.ownProps.clearState();})}>{faker1}</div>
-                <div className="faker" onClick={()=> this.props.createStation({name:`${faker2}`})
+                <div className="faker2 faker" onClick={()=> this.props.createStation({name:`${faker2}`})
                   .then((serverS) => {
                     this.props.ownProps.history.push(`/stations/${serverS.station.id}`);
                     this.props.ownProps.clearState();})}>{faker2}</div>
-                  <div className="faker" onClick={()=> this.props.createStation({name:`${faker3}`})
+                  <div className="faker3 faker" onClick={()=> this.props.createStation({name:`${faker3}`})
                     .then((serverS) => {
                       this.props.ownProps.history.push(`/stations/${serverS.station.id}`);
                       this.props.ownProps.clearState();})}>{faker3}</div>
@@ -76,8 +76,8 @@ class ResultsIndex extends React.Component {
             }
 
             <div className="suggestions">
-              <h3>Some Suggestions</h3>
-              <div className="faker" onClick={()=> this.props.createStation({name:`${faker1}`})
+              <h3>Suggested Station</h3>
+              <div className="faker1 faker" onClick={()=> this.props.createStation({name:`${faker1}`})
                 .then((serverS) => {
                   this.props.ownProps.history.push(`/stations/${serverS.station.id}`);
                   this.props.ownProps.clearState();})}>{faker1}</div>

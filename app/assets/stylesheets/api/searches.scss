@@ -26,6 +26,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
+  margin-top: 10px;
 }
 
 
@@ -46,8 +47,23 @@
   cursor: pointer;
 }
 
+.no-results h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
 .faker:hover {
   background: lightblue;
   border-radius: 50px;
   cursor: pointer;
+}
+
+.faker1 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.faker3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }

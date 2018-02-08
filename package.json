@@ -17,6 +17,7 @@
     "react-onclick-outside": "^0.1.0",
     "react-player": "^1.1.1",
     "react-redux": "^5.0.6",
+    "react-retro-hit-counter": "^1.0.1",
     "react-router-dom": "^4.2.2",
     "react-spinners": "^0.2.6",
     "redux": "^3.7.2",
