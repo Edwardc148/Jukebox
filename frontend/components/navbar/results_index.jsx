@@ -27,6 +27,7 @@ class ResultsIndex extends React.Component {
             </div>
             <div className="suggestions">
               <h3>Suggested Stations</h3>
+              <hr className="horizontal-line" width ="220" ></hr>
               <div className="faker1 faker" onClick={()=> this.props.createStation({name:`${faker1}`})
                 .then((serverS) => {
                   this.props.ownProps.history.push(`/stations/${serverS.station.id}`);
@@ -77,6 +78,7 @@ class ResultsIndex extends React.Component {
 
             <div className="suggestions">
               <h3>Suggested Station</h3>
+              <hr className="horizontal-line" width ="220" ></hr>
               <div className="faker1 faker" onClick={()=> this.props.createStation({name:`${faker1}`})
                 .then((serverS) => {
                   this.props.ownProps.history.push(`/stations/${serverS.station.id}`);

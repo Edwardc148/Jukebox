@@ -28,7 +28,6 @@ class Search extends React.Component {
   }
 
   search(){
-    console.log(this.state.search_value);
     if (this.state.search_value) {
       SearchAPIUtils.search(this.state.search_value).then(searchResult => {
         this.setState({'search_result': searchResult});

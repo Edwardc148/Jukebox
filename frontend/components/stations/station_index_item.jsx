@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const StationIndexItem = props => {
-  console.log(props);
   return (
     <div className="station-index-item">
       <Link

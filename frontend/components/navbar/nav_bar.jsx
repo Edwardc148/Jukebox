@@ -4,8 +4,6 @@ import Search from './search';
 
 export default ( { currentUser, logout, path, createStation, currentStation } ) => {
   let display;
-  console.log(currentStation);
-  console.log(path);
   if (currentUser) {
       display = (
       <div>
