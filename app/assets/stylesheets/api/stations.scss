@@ -51,8 +51,16 @@
 
 .show-station-full-div {
   display: flex;
-  margin-top: 100px;
+  // margin-top: 100px;
   // margin-left: 50px;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-bottom: 270px;
+  padding-top: 100px;
+  background-size: 100%;
+  // background-color: #0c5beb;
+  background-color: #3c456c;
+  background-blend-mode: overlay;
 }
 
 .show-station-index-div {
@@ -131,18 +139,24 @@
   width: 375px;
   height: 375px;
   border-radius: 5px;
+  border: 1px solid cornflowerblue;
+  box-shadow: 10px 10px #8888;
 }
 
 .show-song-name {
   text-align: center;
+  color: white;
+  margin-top: 10px;
 }
 
 .show-artist-name {
   text-align: center;
+  color: white;
 }
 
 .show-album-name {
   text-align: center;
+  color: white;
 }
 
 .album-image:hover {
@@ -150,7 +164,7 @@
 }
 
 .big-album-image:hover {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .sweet-loading {

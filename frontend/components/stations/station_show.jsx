@@ -12,15 +12,15 @@ class StationShow extends React.Component {
   }
 
   componentDidMount() {
-    debugger;
+    // debugger;
     if (_.isEmpty(this.props.songs)) {
-      debugger;
+      // debugger;
       this.props.fetchAllStations()
         .then(this.props.fetchOneStation(this.props.match.params.id));
     } else {
-      debugger;
+      // debugger;
       if (this.props.station.id !== this.props.playback.current_station) {
-        debugger;
+        // debugger;
         this.props.fetchOneStation(this.props.match.params.id);
       }
     }
@@ -49,8 +49,10 @@ class StationShow extends React.Component {
 
     if ((Object.values(this.props.songs).length >= 1) && (this.props.station !== undefined && boolean) ) {
       let current_song_id = this.props.station.songs[0];
+      var image_url = this.props.songs[this.props.playback.current_song].album_image_url;
+      let background_image = { backgroundImage: 'url(' + image_url + ')'};
       return (
-        <div className="show-station-full-div">
+        <div className="show-station-full-div" style={background_image}>
           <div className="show-station-index-div">
             <ul className="show-station-index">
               {this.props.stations.map(station => {

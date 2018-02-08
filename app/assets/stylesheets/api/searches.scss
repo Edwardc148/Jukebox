@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .search {
-  width: 250px;
-  height: 22px;
+  width: 300px;
+  height: 35px;
   position: absolute;
   border-radius: 50px;
   letter-spacing: 2px;
@@ -15,8 +15,8 @@
 
 .search-index-item-div {
   position:absolute;
-  margin-top: 30px;
-  width: 256px;
+  margin-top: 40px;
+  width: 305px;
   background: lightgray;
   border-radius: 10px;
   z-index: 1;
@@ -30,5 +30,6 @@
 
 .search-index-item:hover {
   background: lightblue;
+  border-radius: 50px;
   cursor: pointer;
 }

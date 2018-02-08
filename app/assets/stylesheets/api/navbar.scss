@@ -3,6 +3,7 @@
   font-family: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: space-between;
+  height: 75px;
 }
 
 .jukebox-logo {
@@ -44,7 +45,7 @@
 .button-logout {
   display: inline-block;
   text-align: center;
-  padding: 3px 20px 3px 20px;
+  padding: 3px 25px 3px 25px;
   background-color: #fff;
   color: blue;
   border-radius: 2px;
@@ -53,6 +54,7 @@
   font-weight: 400px;
   margin: 23px 35px 0px 0px;
   background-size: cover;
+  height: 25px;
 }
 
 .button-login {
