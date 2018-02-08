@@ -12,9 +12,14 @@ class StationShow extends React.Component {
   }
 
   componentDidMount() {
+    console.log(this.props);
     if (_.isEmpty(this.props.songs)) {
       this.props.fetchAllStations()
         .then(this.props.fetchOneStation(this.props.match.params.id));
+    } else {
+      if (this.props.station.id !== this.props.playback.current_station) {
+        this.props.fetchOneStation(this.props.match.params.id);
+      }
     }
   }
 
