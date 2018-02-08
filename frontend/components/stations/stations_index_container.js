@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import StationsIndex from './stations_index';
 import { withRouter } from 'react-router-dom';
-import { receiveAllStations } from '../../actions/station_actions';
+import { receiveAllStations, deleteOneStation } from '../../actions/station_actions';
 
 const mapStateToProps = (state, ownProps) => {
   return {
@@ -12,7 +12,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    fetchAllStations: () => dispatch(receiveAllStations())
+    fetchAllStations: () => dispatch(receiveAllStations()),
+    deleteOneStation: (id) => dispatch(deleteOneStation(id))
   };
 };
 

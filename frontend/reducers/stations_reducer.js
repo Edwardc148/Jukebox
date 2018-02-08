@@ -1,4 +1,4 @@
-import { RECEIVE_ALL_STATIONS, RECEIVE_ONE_STATION } from '../actions/station_actions';
+import { RECEIVE_ALL_STATIONS, RECEIVE_ONE_STATION, REMOVE_ONE_STATION } from '../actions/station_actions';
 import _ from 'lodash';
 
 export default (state = {}, action) => {
@@ -10,6 +10,10 @@ export default (state = {}, action) => {
     case RECEIVE_ONE_STATION:
       newState = _.merge({}, state);
       newState[action.station.id] = action.station;
+      return newState;
+    case REMOVE_ONE_STATION:
+      newState = _.merge({}, state);
+      delete newState[action.station.id];
       return newState;
     default:
       return state;

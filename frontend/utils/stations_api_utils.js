@@ -17,3 +17,10 @@ export const createOneStation = (station) => {
     data: { station: station }
   });
 };
+
+export const deleteOneStation = (id) => {
+  return $.ajax({
+    url: `/api/stations/${id}`,
+    method: 'DELETE'
+  });
+};

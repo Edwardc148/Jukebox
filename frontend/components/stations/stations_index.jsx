@@ -20,6 +20,7 @@ class StationsIndex extends React.Component {
               <StationIndexItem
                 key={station.id}
                 station={station}
+                deleteOneStation={this.props.deleteOneStation}
               />
             );
           })}

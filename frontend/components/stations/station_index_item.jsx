@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const StationIndexItem = props => {
+  console.log(props);
   return (
     <div className="station-index-item">
       <Link
@@ -11,13 +12,15 @@ const StationIndexItem = props => {
           className="album-image" src={props.station.image_url} width="100" height="100">
         </img>
       </Link>
-      <p className="station-name">
+      <span className="station-name">
         <Link className="station-name-link" to={`/stations/${props.station.id}`}>
           <span>
-            {props.station.name}
+            <span>{props.station.name}</span>
+
           </span>
         </Link>
-      </p>
+        <span className="delete-span" onClick={() => props.deleteOneStation(props.station.id)}><i className="fas fa-trash-alt delete"></i></span>
+      </span>
     </div>
   );
 };

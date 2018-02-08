@@ -55,7 +55,7 @@ class StationShow extends React.Component {
         <div className="show-station-full-div" style={background_image}>
           <div className="show-station-index-div">
             <ul className="show-station-index">
-              {this.props.stations.map(station => {
+              {this.props.stations.reverse().slice(0,6).map(station => {
                 return (
                   <StationShowIndexItem
                     key={station.id}

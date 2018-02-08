@@ -26,7 +26,7 @@
 
 .station-name-link {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .station-index {
@@ -41,6 +41,7 @@
   text-decoration: none;
   text-align: center;
   padding-top: 10px;
+  position: relative;
 }
 
 .station-name-link span:hover {
@@ -65,6 +66,24 @@
 
 .show-station-index-div {
 
+}
+
+.station-relative-name {
+  position: relative;
+}
+
+.delete-span {
+  position: absolute;
+  right: 5px;
+}
+
+.delete {
+  color: white;
+}
+
+.delete:hover {
+  color: red;
+  cursor: pointer;
 }
 
 .show-station-index-item {
