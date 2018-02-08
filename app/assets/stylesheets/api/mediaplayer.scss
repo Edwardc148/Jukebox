@@ -1,4 +1,42 @@
-.footer-media-player-div a {
+// .footer-media-player-div a {
+//   position: absolute;
+//   top: 20px;
+//   left: 20px;
+//   text-decoration: none;
+//   z-index: 1;
+// }
+
+// .footer-media-player-div a:visited {
+//   color: black;
+// }
+
+.github-links {
+  text-align: center;
+  height: 100%;
+}
+
+.github-links-logged-out {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github-text-logged-out {
+  position: relative;
+}
+
+.github-text-logged-out {
+  text-decoration: none;
+}
+
+.github-text-logged-out:visited {
+  color: black;
+}
+
+.github-text {
+  color: black;
   position: absolute;
   top: 20px;
   left: 20px;
@@ -6,15 +44,7 @@
   z-index: 1;
 }
 
-.footer-media-player-div a:visited {
-  color: black;
-}
-
-.github-links {
-  text-align: center;
-}
-
-.github-text {
+.github-text:visited {
   color: black;
 }
 

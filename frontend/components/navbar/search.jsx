@@ -54,6 +54,7 @@ class Search extends React.Component {
   render () {
     return (
       <div className="search-bar-div">
+        <span className="search-icon"><i className="fas fa-search"></i></span>
         <input id="search" onChange={this.handleUserSearch} className="search" type="text" placeholder="Create A Station" value={this.state.search_value}></input>
 
         { this.state.search_result !== {} ?
