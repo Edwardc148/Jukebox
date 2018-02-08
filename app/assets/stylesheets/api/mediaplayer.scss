@@ -162,10 +162,11 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 0px;
 }
 
-.volume-bar {
+input[type=range].volume-bar {
   border: 1px solid black;
   position: absolute;
   margin-top: 0.95%;
   margin-left: 21%;
   border-radius: 10px;
+  background: cornflowerblue;
 }
