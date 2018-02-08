@@ -11,12 +11,14 @@ class ReactMediaPlayer extends React.Component {
     this.stringify = this.stringify.bind(this);
     this.repeat = this.repeat.bind(this);
     this.muted = this.muted.bind(this);
+    this.setVolume = this.setVolume.bind(this);
   }
 
   mergeProps(props) {
     let merged_obj = Object.assign({}, props);
     merged_obj['played'] = 0;
     merged_obj['muted'] = false;
+    merged_obj['volume'] = 0.8;
     return merged_obj;
   }
 
@@ -82,6 +84,11 @@ class ReactMediaPlayer extends React.Component {
     }
   }
 
+  setVolume(e){
+    e.preventDefault();
+    this.setState({'volume': parseFloat(e.target.value)});
+  }
+
   render (){
     let playbutton;
     return (
@@ -100,6 +107,7 @@ class ReactMediaPlayer extends React.Component {
             playing={this.props.playback.playing}
             onProgress={this.onProgress}
             onDuration={this.onDuration}
+            volume={this.state.volume}
           />
           <div className="seek-bar">
             <input className="input-bar" type="range" min={0} max={1} step="any" value={this.state.played}></input>
@@ -142,6 +150,8 @@ class ReactMediaPlayer extends React.Component {
                   null
                 }
               </span>
+
+              <input className="volume-bar" type='range' min={0} max={1} step='any' value={this.state.volume} onChange={this.setVolume} />
             </div>
           </div>
         </div>
