@@ -32,9 +32,9 @@ artist12 = Artist.create(name: "Avril Lavigne", description: "Second Description
 artist13 = Artist.create(name: "Clean Bandit", description: "Second Description")
 artist14 = Artist.create(name: "Britney Spears", description: "Second Description")
 
-album1 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist1.id, release_yr: 2018, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/1.jpg')
+album1 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist1.id, release_yr: 2018, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/18.jpg')
 
-album2 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist2.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/2.jpg')
+album2 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist2.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/1.png')
 
 album3 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist3.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/3.jpg')
 
