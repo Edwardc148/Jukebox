@@ -28,7 +28,25 @@
   text-align: center;
 }
 
+
+
+.suggestions {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.suggestions h3 {
+  margin-top: 10px;
+}
+
 .search-index-item:hover {
+  background: lightblue;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.faker:hover {
   background: lightblue;
   border-radius: 50px;
   cursor: pointer;
