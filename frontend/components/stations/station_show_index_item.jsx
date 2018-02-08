@@ -11,7 +11,10 @@ const StationShowIndexItem = props => {
           <img
             className="show-album-image" src={props.station.image_url} width="100" height="100">
           </img>
-          <div className="show-station-name">{props.station.name}
+          <div className="show-station-name">
+            <div className="span-station-name">
+              {props.station.name}
+            </div>
           </div>
         </Link>
 

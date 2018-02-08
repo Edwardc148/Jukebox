@@ -105,10 +105,20 @@
 .show-station-name {
   color: white;
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 38%);
-  z-index: 1;
+  height: 100%;
+  width: 75%;
+  left: 50px;
+  word-wrap: break-word;
+  // margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.span-station-name {
+  // display: inline-block;
+  width: 90%;
 }
 
 .show-station-div {
