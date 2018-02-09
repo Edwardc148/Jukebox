@@ -97,10 +97,11 @@
 .for-hover {
   height: 100%;
   position: relative;
+  // transition: width 2s;
 }
 
 .for-hover:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   // z-index: -2;
 }
 
@@ -116,6 +117,11 @@
   border: 1px solid lightskyblue;
   border-radius: 5px;
   background: cornflowerblue;
+  transition: width 1s;
+}
+
+.show-radio-image:hover {
+  width: 270px;
 }
 
 .show-album-image {
