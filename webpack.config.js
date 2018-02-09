@@ -1,4 +1,18 @@
 const path = require('path');
+const webpack = require('webpack');
+
+var plugins = [
+  new webpack.DefinePlugin({
+    'process.env': {
+      'NODE_ENV': JSON.stringify('production')
+    }
+  }),
+  new webpack.optimize.UglifyJsPlugin({
+    compress: {
+      warnings: true
+    }
+  })
+];
 
 module.exports = {
   context: __dirname,
@@ -10,6 +24,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '*']
   },
+  plugins,
   module: {
     loaders: [
       {
