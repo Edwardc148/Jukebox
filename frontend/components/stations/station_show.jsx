@@ -75,18 +75,22 @@ class StationShow extends React.Component {
                 src={this.props.songs[this.props.playback.current_song].album_image_url}>
               </img>
             </Link>
-            <p className="show-song-name">
-              <span>
-                {this.props.songs[this.props.playback.current_song].name}
-              </span>
-            </p>
+
+              <p className="show-song-name">
+                <span className="song-name-clicker" onClick={() => this.props.fetchOneArtist(this.props.songs[this.props.playback.current_song].artist_id)
+                  .then(serverArtist => {
+                    this.props.ownProps.history.push(`/artists/${serverArtist.artist.id}`);})}>
+                  {this.props.songs[this.props.playback.current_song].name}
+                </span>
+              </p>
+
             <p className="show-artist-name">
-              <span>
+              <span className="artist-name-clicker">
                 {this.props.songs[this.props.playback.current_song].artist_name}
               </span>
             </p>
             <p className="show-album-name">
-              <span>
+              <span className="album-name-clicker">
                 {this.props.songs[this.props.playback.current_song].album_name}
               </span>
             </p>

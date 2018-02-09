@@ -8,7 +8,7 @@ let defaultState = {
   queue_songs: [],
   current_song_url: "",
   current_station: "",
-  current_song_name: ""
+  current_song_name: "",
 };
 
 export default (state = defaultState, action) => {

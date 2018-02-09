@@ -19,15 +19,15 @@ demo = User.create(name: "Demo", email: "demo@gmail.com", password: "password")
 
 artist1 = Artist.create(name: "3 Doors Down", description: "This is a demo description")
 artist2 = Artist.create(name: "Cascada", description: "Second Description")
-artist3 = Artist.create(name: "Chainsmokers ft. Halsey", description: "Second Description")
+artist3 = Artist.create(name: "Chainsmokers", description: "Second Description")
 artist4 = Artist.create(name: "Ed Sheeran", description: "Second Description")
 artist5 = Artist.create(name: "Foo Fighters", description: "Second Description")
 artist6 = Artist.create(name: "Outkast", description: "Second Description")
 artist7 = Artist.create(name: "Nickelback", description: "Second Description")
-artist8 = Artist.create(name: "Zara Larsson ft. MNEK", description: "Second Description")
-artist9 = Artist.create(name: "Clean Bandit ft. Jess Glynne", description: "Second Description")
+artist8 = Artist.create(name: "Zara Larsson", description: "Second Description")
+artist9 = Artist.create(name: "Clean Bandit & Jess", description: "Second Description")
 artist10 = Artist.create(name: "Chris Brown", description: "Second Description")
-artist11 = Artist.create(name: "Martin Garrix & Dua Lipa", description: "Second Description")
+artist11 = Artist.create(name: "Martin Garrix", description: "Second Description")
 artist12 = Artist.create(name: "Avril Lavigne", description: "Second Description")
 artist13 = Artist.create(name: "Clean Bandit", description: "Second Description")
 artist14 = Artist.create(name: "Britney Spears", description: "Second Description")
@@ -88,7 +88,7 @@ song9 = Song.create(name: "Rather Be", album_id: album9.id, duration: 130, song_
 
 song10 = Song.create(name: "Run It!", album_id: album10.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/runnit.mp3")
 
-song11 = Song.create(name: "Scared To Be Lonely - Remix", album_id: album11.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/scrd.mp3")
+song11 = Song.create(name: "Scared To Be Lonely", album_id: album11.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/scrd.mp3")
 
 song12 = Song.create(name: "Sk8ter Boi", album_id: album12.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/sk8.mp3")
 

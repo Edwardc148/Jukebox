@@ -124,7 +124,7 @@
   border: 1px solid lightskyblue;
   border-radius: 5px;
   background: cornflowerblue;
-  transition: width 1s;
+  transition: width 0.5s;
 }
 
 .show-radio-image:hover {
@@ -179,6 +179,21 @@
   text-align: center;
   color: white;
   margin-top: 10px;
+}
+
+.song-name-clicker:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.artist-name-clicker:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.album-name-clicker:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .show-artist-name {

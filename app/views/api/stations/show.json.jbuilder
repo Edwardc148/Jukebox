@@ -13,6 +13,7 @@ json.current_station_songs do
       json.album_name song.album.name
       json.artist_name song.album.artist.name
       json.album_image_url song.album.image_url
+      json.artist_id song.album.artist.id
     end
   end
 end
