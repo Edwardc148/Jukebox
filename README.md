@@ -1,7 +1,8 @@
 # Jukebox
 
-Jukebox is a music web application that can adapt to your own personalized style. It is influenced by the Pandora.com with my own twists in design.
+[Live Demo](https://jukebox-aa.herokuapp.com/)
 
+Jukebox is a music web application that can adapt to your own personalized style. It is influenced by the Pandora.com with my own twists in design.
 
 ## Technology
 
@@ -9,38 +10,14 @@ This full stack application makes use of a variety of software technologies in o
 
 ## Features
 
-- 1. Continuous Music Playback: 
+- 1. Continuous music playback is a mandatory feature for all audio applications. This means that users should be able to navigate to different parts of the website without having any interruptions to the current song.
 
+![MusicPlayback](https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/ReadMe/Jukebox-Station-Show.png)
 
-Able to move between same station without retrieving all music again
- Able to change music when changing stations
- Now playing button works
- My stations button does not disrupt music playback
- Play Pause Next Repeat
- Adequate and appropriate seeds to test playback
- Redux/React (appropriate action triggered on button clicks)
+- 2. Each Station has links to access different subscribed stations as well as the ability to redirect to the current song's artist description page.  Just like the real Pandora!
 
-# README
+![StationShow](https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/ReadMe/Jukebox-Station-Show.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- 3. Searching for music can really make the difference in a music application.  Being able to search for different artists or songs can help improve the user experience as well as make each user account reflect their own personality.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Search](https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/ReadMe/Search-Functionality.png)
