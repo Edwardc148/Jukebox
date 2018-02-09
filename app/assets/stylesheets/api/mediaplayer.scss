@@ -184,3 +184,17 @@ input[type=range].volume-bar::-webkit-slider-thumb {
   cursor: pointer;
   margin-top: 0px;
 }
+
+.now-playing-header {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  color: white;
+}
+
+.now-playing-name {
+  position: absolute;
+  top: 20px;
+  left: 220px;
+  color: #00ff63;
+}

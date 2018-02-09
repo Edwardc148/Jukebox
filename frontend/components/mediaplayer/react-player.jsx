@@ -95,8 +95,10 @@ class ReactMediaPlayer extends React.Component {
       <div className="react-player-div">
         <div className='react-player-container'>
           <footer>
-            <a className="github-text" href="https://github.com/Edwardc148/Jukebox">Github</a>
+            <a className="github-text" href="https://github.com/Edwardc148/Jukebox"><i className="fab fa-github fa-2x"></i></a>
           </footer>
+          <span className="now-playing-header">Now Playing:</span>
+          <span className="now-playing-name">{this.props.playback.current_song_name}</span>
           <ReactPlayer
             ref={this.ref()}
             className="react-player"

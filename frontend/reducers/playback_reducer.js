@@ -21,6 +21,7 @@ export default (state = defaultState, action) => {
       newState['queue_songs'] = _.shuffle(Object.values(action.songs));
       newState['current_song'] = song_keys[0];
       newState['current_song_url'] = action.songs[song_keys[0]].song_url;
+      newState['current_song_name'] = action.songs[song_keys[0]].name;
       newState['current_station'] = action.current_station;
       return newState;
     case CHANGE_PLAYBACK:
@@ -34,6 +35,7 @@ export default (state = defaultState, action) => {
       queue_songs.push(prev_song);
       newState['queue_songs'] = queue_songs;
       newState['current_song'] = queue_songs[0].id;
+      newState['current_song_name'] = queue_songs[0].name;
       newState['current_song_url'] = queue_songs[0].song_url;
 
       return newState;
