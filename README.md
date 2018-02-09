@@ -66,3 +66,7 @@ json.current_station_songs do
   end
 end
 ```
+
+## Future Direction
+- Add handling for additional edge cases in user inputs
+- Creating pages for specific artist albums as well as increasing the database seeds.
