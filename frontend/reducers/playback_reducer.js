@@ -7,7 +7,8 @@ let defaultState = {
   current_song: "",
   queue_songs: [],
   current_song_url: "",
-  current_station: ""
+  current_station: "",
+  current_song_name: ""
 };
 
 export default (state = defaultState, action) => {
@@ -30,15 +31,19 @@ export default (state = defaultState, action) => {
       return newState;
     case NEXT_SONG:
       newState = _.merge({}, state);
-      let queue_songs = state.queue_songs;
-      let prev_song = queue_songs.shift();
-      queue_songs.push(prev_song);
-      newState['queue_songs'] = queue_songs;
-      newState['current_song'] = queue_songs[0].id;
-      newState['current_song_name'] = queue_songs[0].name;
-      newState['current_song_url'] = queue_songs[0].song_url;
-
-      return newState;
+      let queue_songs;
+      if (_.isEmpty(state.queue_songs)) {
+        return newState;
+      } else {
+        queue_songs = state.queue_songs;
+        let prev_song = queue_songs.shift();
+        queue_songs.push(prev_song);
+        newState['queue_songs'] = queue_songs;
+        newState['current_song'] = queue_songs[0].id;
+        newState['current_song_name'] = queue_songs[0].name;
+        newState['current_song_url'] = queue_songs[0].song_url;
+        return newState;
+      }
     default:
       return state;
   }

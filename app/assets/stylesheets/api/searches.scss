@@ -18,6 +18,10 @@
   width: 320px;
 }
 
+.search::placeholder {
+  color: black;
+}
+
 .search:focus {
   outline: none;
 }
