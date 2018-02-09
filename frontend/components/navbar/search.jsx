@@ -23,7 +23,7 @@ class Search extends React.Component {
   }
 
   componentDidMount(){
-   document.getElementById('search').focus();
+   // document.getElementById('search').focus();
    document.getElementById('search').addEventListener('keyup', _.debounce(this.search, 250) );
   }
 
@@ -38,8 +38,8 @@ class Search extends React.Component {
   }
 
   clearState() {
-    this.setState({'search_value': ''});
-    this.setState({'search_result': {}});
+    this.setState({'search_value': '', 'search_result': {}});
+    // this.setState({'search_result': {}});
   }
 
   handleClickOutside() {
