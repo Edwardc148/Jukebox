@@ -5,4 +5,5 @@ class Api::SearchesController < ApplicationController
     @artists = Artist.where("name ILIKE ?", "%#{search_value}%")
     @songs = Song.where('name ILIKE ?', "%#{search_value}%")
   end
+  
 end

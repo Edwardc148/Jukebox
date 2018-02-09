@@ -21,3 +21,20 @@ This full stack application makes use of a variety of software technologies in o
 3. Searching for music can really make the difference in a music application.  Being able to search for different artists or songs can help improve the user experience as well as make each user account reflect their own personality.
 
 ![Search](https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/ReadMe/Search-Functionality.png)
+
+
+## Sample Code
+
+- Implementation of PostgreSQL pattern matching in order to produce search results.
+
+```ruby
+class Api::SearchesController < ApplicationController
+
+  def index
+    search_value = params[:searchValue]
+    @artists = Artist.where("name ILIKE ?", "%#{search_value}%")
+    @songs = Song.where('name ILIKE ?', "%#{search_value}%")
+  end
+
+end
+```
