@@ -61,12 +61,12 @@ album13 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist13.id
 album14 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist14.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/14.png')
 
 
-station1 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id)
-station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id)
-station3 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id)
-station4 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id)
-station5 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id)
-station6 = Station.create(name: "Emo", user_id: demo.id)
+station1 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album6.image_url)
+station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album8.image_url)
+station3 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album9.image_url)
+station4 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album12.image_url)
+station5 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album4.image_url)
+station6 = Station.create(name: "Emo", user_id: demo.id, image_url: album1.image_url)
 
 song1 = Song.create(name: "Kryptonite", album_id: album1.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/3doord.mp3")
 

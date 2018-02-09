@@ -10,6 +10,8 @@ class Api::StationsController < ApplicationController
     @station.user_id = current_user.id
     if @station.save
       @station.song_ids = Song.all.pluck(:id).shuffle!
+      @station.image_url = Song.find(@station.song_ids.sample).album.image_url
+      @station.save
       render :show
     else
       render json: @station.errors.full_messages, status: 422

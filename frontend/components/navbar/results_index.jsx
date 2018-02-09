@@ -68,6 +68,7 @@ class ResultsIndex extends React.Component {
                   return (
                     <ResultsIndexItem key={songObject.id} song={songObject}
                     createStation={this.props.createStation}
+                    ownProps={this.props.ownProps}
                     />
                   );
                 })}

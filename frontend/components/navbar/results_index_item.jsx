@@ -20,7 +20,10 @@ class ResultsIndexItem extends React.Component {
 
     if (this.props.song) {
       return (
-        <div className="search-index-item" onClick={() => this.props.createStation({name:`${this.props.song.name}`})} >
+        <div className="search-index-item" onClick={() => this.props.createStation({name:`${this.props.song.name}`})
+          .then((serverS) => {
+            this.props.ownProps.history.push(`/stations/${serverS.station.id}`);
+            this.props.ownProps.clearState();})}>
           {this.props.song.name}
         </div>
       );

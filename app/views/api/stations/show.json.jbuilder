@@ -2,7 +2,7 @@ json.current_station do
   json.set! @station.id do
     json.extract! @station, :name, :id
     json.songs @station.songs.pluck(:id)
-    json.image_url @station.songs.sample.album.image_url
+    json.image_url @station.image_url
   end
 end
 
