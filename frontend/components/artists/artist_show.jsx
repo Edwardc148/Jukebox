@@ -34,11 +34,6 @@ class ArtistShow extends React.Component {
             </div>
           </div>
 
-          <div className="artist-page-albums-div">
-            Artist Page Albums
-          </div>
-
-
         </div>
       );
     } else {
