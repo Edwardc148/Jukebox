@@ -5,4 +5,52 @@
 .artist-page-full-div {
   text-align: center;
   height: 870px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist-page-header-div {
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #3c456c;
+  background-blend-mode: overlay;
+}
+
+.artist-page-about-div {
+  text-align: center;
+}
+
+.artist-page-about {
+  width: 750px;
+  height: 400px;
+}
+
+.artist-page-about-div h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.artist-page-about {
+  color: #c9d5d2;
+  letter-spacing: 1px;
+}
+
+.artist-page-name {
+  margin-top: 60px;
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.view-counter {
+  margin-top: 30px;
+  color: #a2f879;
+}
+
+.play-circle {
+  color: white;
+  margin-top: 45px;
 }
