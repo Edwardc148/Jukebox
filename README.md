@@ -66,3 +66,8 @@ json.current_station_songs do
   end
 end
 ```
+
+## Future Direction
+
+- add additional routes in order to redirect user inputs in browsers
+- add pages to artist's songs as well as albums
