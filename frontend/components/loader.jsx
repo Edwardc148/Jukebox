@@ -12,7 +12,8 @@ class AwesomeLoader extends React.Component {
 
   render() {
     return (
-      <div className='sweet-loading'>
+      <div
+        className='sweet-loading'>
         <RingLoader
           color={'#123abc'}
           loading={this.state.loading}

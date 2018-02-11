@@ -12,7 +12,7 @@ let defaultState = {
 };
 
 export default (state = defaultState, action) => {
-  let newState = {};
+  let newState;
 
   Object.freeze(state);
   switch(action.type) {
@@ -32,6 +32,7 @@ export default (state = defaultState, action) => {
     case NEXT_SONG:
       newState = _.merge({}, state);
       let queue_songs;
+
       if (_.isEmpty(state.queue_songs)) {
         return newState;
       } else {
@@ -44,6 +45,7 @@ export default (state = defaultState, action) => {
         newState['current_song_url'] = queue_songs[0].song_url;
         return newState;
       }
+      
     default:
       return state;
   }

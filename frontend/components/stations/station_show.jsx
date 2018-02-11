@@ -22,19 +22,8 @@ class StationShow extends React.Component {
     }
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   debugger;
-  //   if (this.props.match.params.id !== nextProps.match.params.id) {
-  //     debugger;
-  //     nextProps.fetchAllStations()
-  //       .then(nextProps.fetchOneStation(nextProps.match.params.id));
-  //   }
-  // }
-
   componentWillReceiveProps(nextProps) {
-
     if (this.props.match.params.id !== nextProps.match.params.id) {
-      // debugger;
       nextProps.fetchOneStation(nextProps.match.params.id);
     }
   }
