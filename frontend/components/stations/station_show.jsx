@@ -12,15 +12,11 @@ class StationShow extends React.Component {
   }
 
   componentDidMount() {
-    // debugger;
     if (_.isEmpty(this.props.songs)) {
-      // debugger;
       this.props.fetchAllStations()
         .then(this.props.fetchOneStation(this.props.match.params.id));
     } else {
-      // debugger;
       if (this.props.station.id !== this.props.playback.current_station) {
-        // debugger;
         this.props.fetchOneStation(this.props.match.params.id);
       }
     }
@@ -36,7 +32,7 @@ class StationShow extends React.Component {
   // }
 
   componentWillReceiveProps(nextProps) {
-    // debugger;
+
     if (this.props.match.params.id !== nextProps.match.params.id) {
       // debugger;
       nextProps.fetchOneStation(nextProps.match.params.id);
