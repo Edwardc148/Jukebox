@@ -24,7 +24,7 @@ class Api::StationsController < ApplicationController
   end
 
   def destroy
-    @station = current_user.stations.find_by(id: params[:id])
+    @station = Station.find_by(id: params[:id])
     if @station
       @station.destroy
       render :show
