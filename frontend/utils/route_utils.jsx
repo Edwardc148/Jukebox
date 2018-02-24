@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 import { Redirect, Route, withRouter } from 'react-router-dom';
 
 
-const mapStateToProps = (state) => ({
-  loggedIn: Boolean(state.session.currentUser)
+const mapStateToProps = (state, ownProps) => ({
+  loggedIn: Boolean(state.session.currentUser),
+  existingStations: Object.keys(state.stations),
+  reqStationId: ownProps.match.params.id
 });
 
 const Navigation = ({loggedIn, path, component1:Component1, component:Component2}) => (
@@ -34,6 +36,16 @@ const Protected = ({ loggedIn, path, component: Component}) => (
   />
 );
 
+const ExtraProtected = ({ loggedIn, path, component: Component, existingStations, reqStationId }) => {
+  return (<Route
+    path={path}
+    render={props => (
+       existingStations.includes(reqStationId) ? <Component {...props} /> : <Redirect to={"/stations"} />
+    )}
+  />);
+};
+
+
 const Footer = ({ loggedIn, path, component1: Component1, component2: Component2}) => (
   <Route
     path={path}
@@ -57,3 +69,8 @@ export const ConditionalMediaRoute = withRouter(connect(
 export const NavigationRoute = withRouter(connect(
   mapStateToProps
 )(Navigation));
+
+export const ExtraProtectedRoute =
+withRouter(connect(
+  mapStateToProps
+)(ExtraProtected));

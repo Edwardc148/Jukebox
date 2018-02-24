@@ -14,7 +14,8 @@ import {
   AuthRoute,
   ProtectedRoute,
   ConditionalMediaRoute,
-  NavigationRoute
+  NavigationRoute,
+  ExtraProtectedRoute
 } from '../utils/route_utils';
 
 const App = () => (
