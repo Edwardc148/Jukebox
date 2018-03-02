@@ -84,7 +84,9 @@ class StationShow extends React.Component {
       );
     } else {
       return (
-        <AwesomeLoader />
+        <div className="awesome-loader">
+          <AwesomeLoader />
+        </div>
       );
     }
   }

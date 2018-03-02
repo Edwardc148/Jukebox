@@ -18,7 +18,7 @@ class ReactMediaPlayer extends React.Component {
     let merged_obj = Object.assign({}, props);
     merged_obj['played'] = 0;
     merged_obj['muted'] = false;
-    merged_obj['volume'] = 0.8;
+    merged_obj['volume'] = 0.5;
     return merged_obj;
   }
 
