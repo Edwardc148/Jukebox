@@ -9,6 +9,12 @@ class StationShow extends React.Component {
   constructor(props) {
     super(props);
     this.state = this.props.station;
+    this.handleErrors = this.handleErrors.bind(this);
+  }
+
+  handleErrors() {
+    this.props.clearErrors();
+    this.props.history.push('/stations');
   }
 
   componentDidMount() {
@@ -29,6 +35,7 @@ class StationShow extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     let boolean = false;
     if (this.props.station && this.props.station.songs) {
       boolean = this.props.songs.hasOwnProperty(this.props.station.songs[0]);
@@ -80,6 +87,14 @@ class StationShow extends React.Component {
               </span>
             </p>
           </div>
+        </div>
+      );
+    } else if (!_.isEmpty(this.props.errors)) {
+      return (
+        <div className="awesome-loader">
+          <AwesomeLoader />
+          <h1 className="page-not-found">Page Not Found</h1>
+          <div className="back-to-stations" onClick={this.handleErrors}>Back to stations</div>
         </div>
       );
     } else {

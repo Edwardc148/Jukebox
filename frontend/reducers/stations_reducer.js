@@ -1,7 +1,8 @@
 import {
   RECEIVE_ALL_STATIONS,
   RECEIVE_ONE_STATION,
-  REMOVE_ONE_STATION
+  REMOVE_ONE_STATION,
+  RECEIVE_STATION_ERRORS
 } from '../actions/station_actions';
 import _ from 'lodash';
 

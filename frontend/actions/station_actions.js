@@ -3,6 +3,12 @@ import * as StationsAPIUtils from '../utils/stations_api_utils';
 export const RECEIVE_ALL_STATIONS = 'RECEIVE_ALL_STATIONS';
 export const RECEIVE_ONE_STATION = 'RECEIVE_ONE_STATION';
 export const REMOVE_ONE_STATION = 'REMOVE_ONE_STATION';
+export const RECEIVE_STATION_ERRORS = 'RECEIVE_STATION_ERRORS';
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
+
+export const clearErrors = () => ({
+  type: CLEAR_ERRORS
+});
 
 const fetchAllStations = (stations) => {
   return {
@@ -27,6 +33,13 @@ const removeOneStation = (station) => {
   };
 };
 
+const receiveStationErrors = (errors) => {
+  return {
+    type: RECEIVE_STATION_ERRORS,
+    errors: errors
+  };
+};
+
 export const receiveAllStations = () => dispatch => (
   StationsAPIUtils.fetchAllStations()
     .then(serverStations => dispatch(fetchAllStations(serverStations)))
@@ -34,7 +47,9 @@ export const receiveAllStations = () => dispatch => (
 
 export const receiveOneStation = (id) => dispatch => (
   StationsAPIUtils.fetchOneStation(id)
-    .then(serverStation => dispatch(fetchOneStation(serverStation)))
+    .then(serverStation => dispatch(fetchOneStation(serverStation)), errors => (
+      dispatch(receiveStationErrors(errors))
+    ))
 );
 
 export const createOneStation = (station) => dispatch => (

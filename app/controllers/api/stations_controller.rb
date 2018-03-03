@@ -20,7 +20,11 @@ class Api::StationsController < ApplicationController
 
   def show
     @station = Station.find_by(id: params[:id])
-    render :show
+    if @station
+      render :show
+    else
+      render json: ["Page Not Found"], status: 404
+    end
   end
 
   def destroy

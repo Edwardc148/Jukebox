@@ -230,3 +230,25 @@
   margin-left:auto;
   margin-right:auto;
 }
+
+.back-to-stations {
+  text-align: center;
+  width: 150px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.back-to-stations:hover {
+  cursor: pointer;
+  background: gray;
+}
+
+.page-not-found {
+  text-align: center;
+  padding-top: 20px;
+}

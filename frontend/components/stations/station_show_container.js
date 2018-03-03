@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { receiveOneStation, receiveAllStations } from '../../actions/station_actions';
+import { receiveOneStation, receiveAllStations, clearErrors } from '../../actions/station_actions';
 import { receiveOneArtist } from '../../actions/artist_actions';
 import StationShow from './station_show';
 
@@ -11,7 +11,8 @@ const mapStateToProps = (state, ownProps) => {
     stations: Object.values(state.stations),
     songs: state.songs,
     playback: state.playback,
-    ownProps: ownProps
+    ownProps: ownProps,
+    errors: state.errors.station
   };
 };
 
@@ -20,6 +21,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     fetchOneStation: (id) => dispatch(receiveOneStation(id)),
     fetchAllStations: () => dispatch(receiveAllStations()),
     fetchOneArtist: (id) => dispatch(receiveOneArtist(id)),
+    clearErrors: () => dispatch(clearErrors())
   };
 };
 
