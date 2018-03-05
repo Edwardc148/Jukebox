@@ -60,13 +60,15 @@ class StationShow extends React.Component {
             </ul>
           </div>
           <div className="show-station-div">
-            <Link
-              className="image-to-stations" to={`/stations/`}>
+            <span
+              className="image-to-stations" onClick={() => this.props.fetchOneArtist(this.props.songs[this.props.playback.current_song].artist_id)
+                .then(serverArtist => {
+                  this.props.ownProps.history.push(`/artists/${serverArtist.artist.id}`);})}>
               <img
                 className="big-album-image"
                 src={this.props.songs[this.props.playback.current_song].album_image_url}>
               </img>
-            </Link>
+            </span>
 
               <p className="show-song-name">
                 <span className="song-name-clicker">

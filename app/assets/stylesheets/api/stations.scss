@@ -175,26 +175,30 @@
   box-shadow: 10px 10px #8888;
 }
 
+.image-to-stations:hover {
+  cursor:pointer;
+}
+
 .show-song-name {
   text-align: center;
   color: white;
   margin-top: 10px;
 }
 
-.song-name-clicker:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
+// .song-name-clicker:hover {
+//   cursor: pointer;
+//   text-decoration: underline;
+// }
 
 .artist-name-clicker:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.album-name-clicker:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
+// .album-name-clicker:hover {
+//   cursor: pointer;
+//   text-decoration: underline;
+// }
 
 .show-artist-name {
   text-align: center;
