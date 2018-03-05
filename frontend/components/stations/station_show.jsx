@@ -35,7 +35,6 @@ class StationShow extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     let boolean = false;
     if (this.props.station && this.props.station.songs) {
       boolean = this.props.songs.hasOwnProperty(this.props.station.songs[0]);

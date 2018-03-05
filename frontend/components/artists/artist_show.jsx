@@ -6,6 +6,7 @@ import _ from 'lodash';
 class ArtistShow extends React.Component {
   constructor(props){
     super(props);
+    this.handleErrors = this.handleErrors.bind(this);
   }
 
   componentDidMount() {
@@ -14,8 +15,28 @@ class ArtistShow extends React.Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (this.props.match.params.id !== nextProps.match.params.id) {
+      nextProps.fetchOneArtist(nextProps.match.params.id);
+    }
+  }
+
+  handleErrors() {
+    this.props.clearErrors();
+    this.props.history.push('/stations');
+  }
+
   render() {
-    if (!_.isEmpty(this.props.artist)) {
+
+    if (!_.isEmpty(this.props.errors)) {
+      return (
+        <div className="awesome-loader">
+          <AwesomeLoader />
+          <h1 className="page-not-found">Page Not Found</h1>
+          <div className="back-to-stations" onClick={this.handleErrors}>Back to stations</div>
+        </div>
+      );
+    } else if (!_.isEmpty(this.props.artist)) {
       let artist = Object.values(this.props.artist)[0];
       var image_url = artist.image_url;
       let background_image = { backgroundImage: 'url(' + image_url + ')'};
@@ -38,7 +59,9 @@ class ArtistShow extends React.Component {
       );
     } else {
       return (
-        <AwesomeLoader />
+        <div className="awesome-loader">
+          <AwesomeLoader />
+        </div>
       );
     }
   }
