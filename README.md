@@ -25,7 +25,7 @@ This full stack application makes use of a variety of software technologies in o
 
 ## Sample Code
 
-- Implementation of PostgreSQL pattern matching in order to produce search results.
+- Devised a REGEX pattern matching algorithm that enhances the user interface by accelerating real time search and database queries.
 
 ```ruby
 class Api::SearchesController < ApplicationController
@@ -39,7 +39,7 @@ class Api::SearchesController < ApplicationController
 end
 ```
 
-- Normalization of my global state through the user of Jbuilder
+- Normalization of my global state through the user of Jbuilder. This allows using the Ruby language to create JSON data feeds which goes directly into my Redux/React components and increases the efficiency of rendering DOM elements.
 
 ```ruby
 json.current_station do
