@@ -27,7 +27,8 @@ class ArtistShow extends React.Component {
   }
 
   render() {
-
+    // console.log(this.props);
+    // console.log(this.props.name);
     if (!_.isEmpty(this.props.errors)) {
       return (
         <div className="awesome-loader">
@@ -37,6 +38,11 @@ class ArtistShow extends React.Component {
         </div>
       );
     } else if (!_.isEmpty(this.props.artist)) {
+      // console.log(this.props.name);
+      // console.log(this.props.name[0].name);
+      // console.log(this.props.name[0][name]);
+      // console.log(this.props.name.name);
+      // console.log(this.props);
       let artist = Object.values(this.props.artist)[0];
       var image_url = artist.image_url;
       let background_image = { backgroundImage: 'url(' + image_url + ')'};
@@ -45,7 +51,8 @@ class ArtistShow extends React.Component {
           <div className="artist-page-header-div" style={background_image}>
             <div className="artist-page-name">{artist.name}</div>
             <div className="view-counter">35 M Listeners</div>
-            <Link className="link-back-to-stations" to={`/stations`}><i className="fas fa-play-circle play-circle fa-5x"></i></Link>
+            <span className="link-back-to-stations" onClick={() => this.props.createStation({name:`${this.props.name[0].name}`})
+              .then((serverS) => this.props.history.push(`/stations/${serverS.station.id}`))}><i className="fas fa-play-circle play-circle fa-5x" ></i></span>
           </div>
 
           <div className="artist-page-about-div">
