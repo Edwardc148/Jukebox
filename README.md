@@ -2,7 +2,7 @@
 
 [Live Demo](https://jukebox-aa.herokuapp.com/)
 
-Jukebox is a music web application that can adapt to your own personalized style. It is influenced by the Pandora.com with my own twists in design.
+Jukebox is a music web application that can adapt to your own personalized style. It is influenced by Pandora.com with my own twists in design.
 
 ## Technology
 
