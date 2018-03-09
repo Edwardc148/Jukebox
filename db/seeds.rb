@@ -106,9 +106,9 @@ album23 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist23.id
 
 
 station1 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album6.image_url)
-station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album27.image_url)
-station3 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album25.image_url)
-station4 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album23.image_url)
+station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album23.image_url)
+station3 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album22.image_url)
+station4 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album21.image_url)
 station5 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album19.image_url)
 station6 = Station.create(name: "Emo", user_id: demo.id, image_url: album22.image_url)
 
