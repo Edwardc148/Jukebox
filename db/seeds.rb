@@ -40,6 +40,23 @@ artist13 = Artist.create(name: "Clean Bandit", description: "Clean Bandit are an
 
 artist14 = Artist.create(name: "Britney Spears", description: "Britney Jean Spears (born December 2, 1981) is an American singer, dancer, and actress. Born in McComb, Mississippi, and raised in Kentwood, Louisiana, she performed acting roles in stage productions and television shows as a child before signing with Jive Records in 1997. Spears's first and second studio albums, ...Baby One More Time (1999) and Oops!... I Did It Again (2000), became massive international successes, with the former becoming the best-selling album by a teenage solo artist.2 Title tracks ...Baby One More Time and Oops!... I Did It Again broke international sales records. In 2001, Spears released her self-titled third studio album, Britney, which spawned international hit single I'm a Slave 4 U and played the starring role in the film Crossroads (2002). She assumed creative control of her fourth studio album, In the Zone (2003), which yielded the worldwide success of the single Toxic which earned Spears for her first and only Grammy award. - From Wikipedia")
 
+artist15 = Artist.create(name: "Camila Cabello", description: "Karla Camila Cabello-Estrabao is a Cuban/Mexican singer-songwriter was born on March 3, 1997 in Havana, Cuba. In 2012, she auditioned for the X-Factor and joined a girl group where she was known as the lead singer of Fifth Harmony. Cabello and her band-mates released one EP and two studio albums. Her departure from the group was announced in December 18th 2016. As a lead artist, Cabello released two hit singles with Shawn Mendes 'I Know What You Did Last Summer' and Machine Gun Kelly's 'Bad Things'. In 2017, Cabello prepared for the release of her debut solo album. Camila scored features with artists such as Cashmere Cat's 'Love Incredible' and Pitbull and J Balvin's 'Hey Ma' scoring the artists and Camila herself a Grammy nomination. Whilst Cabello receives these achievements she scores herself a Guess deal to become an official Guess girl and to be the face of their 2017 Fall campaign. Cabello was welcomed to join the Bruno Mars 24K Magic World Tour as an Opening act, she performed a total of 20 shows. - From IMDB")
+
+artist16 = Artist.create(name: "Lady Gaga", description: "Lady Gaga, born Stefani Joanne Angelina Germanotta, is an American songwriter, singer, actress, philanthropist, dancer and fashion designer. Gaga was born on March 28, 1986 in Manhattan, New York City, to Cynthia Louise (Bissett) and Joseph Anthony Germanotta, Jr., an internet entrepreneur. Her father is of Italian descent, and her mother is of half Italian and half French-Canadian, English, German, and Scottish ancestry. Gaga was able to sing and play the piano from a young age. She attended the Convent of the Sacred Heart from age 11 where was bullied for her appearance (she was small and plumper than other girls with large front teeth) and eccentric habits. By the age of 14, Gaga was performing at open mike nights in clubs and bars. By age 17, she had gained early admission to New York University's Tisch School of the Arts. In addition to sharpening her songwriting skills, she composed essays and analytical papers on art, religion, social issues and politics. At the age of 19 Gaga withdrew from her studies and moved out of her parents' home in order to pursue a musical career. During this time she started a band which began to gain local attention. - From IMDB")
+
+artist17 = Artist.create(name: "A-Ha", description: "Norwegian pop group formed in 1985 comprised of: Morten Harket, lead singer and song writer; Magne Furuholmen ((Mags), keyboards, piano, vocals and song writer, and Paul Waaktaar-Savoy (Pål Waaktaar), guitars, vocals and song writer. Achieved a major breakthrough in 1985 with the hit Take On Me. Has since then had following hits with The Sun Always Shines On TV, Hunting High and Low, Manhattan Skyline, I've Been Losing You, The Living Daylights, Stay on These Roads, Crying in the Rain, Summer Moved On, Forever Not Yours, and recently Analogue - All I Want to name a few. Has sold over 70 millions records worldwide. Made the theme song for the 1987 James Bond movie The Living Daylights (1987). Made a comeback in the year 2000 after a seven year split with the album Minor Earth Major Sky. - From IMDB")
+
+artist18 = Artist.create(name: "Skillet", description: "Skillet is an American Christian rock band formed in Memphis, Tennessee in 1996. The band currently consists of husband John (lead vocals, bass) and wife Korey Cooper (rhythm guitar, keyboards, backing vocals) along with Jen Ledger (drums, vocals) and Seth Morrison (lead guitar). The band has released ten albums, two receiving Grammy nominations: Collide and Comatose. Two of their albums, Comatose and Awake, are certified Platinum and Double Platinum respectively by the RIAA while Rise, is certified Gold as of November 10, 2017. Skillet went through several line-up changes early in their career, leaving founder John Cooper as the only original member remaining in the band. They are known for a relentless touring schedule, which garnered them a top five ranking in the Hardest Working Bands of 2010 by Songkick.com. - From Wikipedia")
+
+artist19 = Artist.create(name: "Wham!", description: "Michael and Ridgeley met at Bushey Meads School in Bushey near the town of Watford in Hertfordshire. The two at first performed in a short-lived ska band called the Executive, alongside former school friends David (Austin) Mortimer, Andrew Leaver and Paul Ridgeley. When this group split, Michael and Ridgeley eventually formed Wham!, signing with Innervision Records. British graphic design studio Stylorouge was credited with adding the exclamation point to the name of the band. Michael took on the majority of roles and responsibilities within the band—composer, producer, lead singer, and occasional instrumentalist. Still teenagers, they promoted themselves as hedonistic youngsters, proud to live a carefree life without work or commitment. This was reflected in their earliest singles which, part-parody, part-social comment, briefly earned Wham! a reputation as a dance protest group. - From IMDB")
+
+artist20 = Artist.create(name: "Linkin Park", description: "Linkin Park is an American rock band from Agoura Hills, California. Formed in 1996, the band rose to international fame with their debut album Hybrid Theory (2000), which was certified Diamond by the RIAA in 2005 and multi-Platinum in several other countries. Their following studio album Meteora continued the band's success, topping the Billboard 200 album chart in 2003, and was followed by extensive touring and charity work.Having adapted nu metal and rap metal to a radio-friendly yet densely layered style in Hybrid Theory and Meteora, the band explored other genres on their next studio album, Minutes to Midnight (2007). The album topped the Billboard charts and had the third-best debut week of any album that year. The band continued to explore a wider variation of musical types in their fourth album, A Thousand Suns (2010), layering their music with more electronic sounds. Their fifth album, Living Things (2012), combines musical elements from all of their previous records. Their sixth album, The Hunting Party (2014), returned to a heavier rock sound. Their seventh album One More Light, a more electronic and pop-oriented record, was released on May 19, 2017. - From Wikipedia")
+
+artist21 = Artist.create(name: "Elton John", description: "Sir Elton John is one of pop music's great survivors. Born 25 March, 1947, as Reginald Kenneth Dwight, he started to play the piano at the early age of four. At the age of 11, he won a scholarship to the Royal Academy of Music. His first band was called Bluesology. He later auditioned (unsuccessfully) as lead singer for the progressive rock bands King Crimson and Gentle Giant. Dwight teamed up with lyricist Bernie Taupin and changed his name to Elton John (merging the names of saxophonist Elton Dean and Long John Baldry). The duo wrote songs for Lulu and Roger Cook. In the early 1970s, he recorded the concept album Tumbleweed Connection. He became the most successful pop artist of the 1970s, and he has survived many different pop fads including punk, the New Romantics and Britpop to remain one of Britain's most internationally acclaimed musicians. - From IMDB")
+
+artist22 = Artist.create(name: "Rihanna", description: "Robyn Rihanna Fenty was born in a parish in Barbados called St. Michael, to Monica (Braithwaite), an accountant, and Ronald Fenty, a warehouse supervisor. Her mother is Afro-Guyanese and her father is of Afro-Barbadian and British Isles ancestry (known as Redlegs in the Caribbean). Rihanna lived the life of a normal island girl going to Combermere, a top sixth form school. Rihanna won numerous beauty pageants and performed Mariah Carey's single Hero in a school talent show. Her life changed forever when one of her friends introduced her to Evan Rodgers, a producer from New York who was in Barbados for a vacation with his wife, who is a native. Rodgers arranged for her to go to New York to meet Jay Z, CEO of Def Jam Records. He heard her sing and knew she was going to be incredibly successful. She was age 16 when she was signed to Def Jam. Since then, she's amassed phenomenal success. - From IMDB")
+
+artist23 = Artist.create(name: "Pentatonix", description: "Pentatonix (abbreviated PTX) is an American a cappella group from Arlington, Texas, consisting of vocalists Scott Hoying, Mitch Grassi, Kirstin Maldonado, Kevin Olusola and Matt Sallee. Avi Kaplan was formerly a member of the group; he was replaced by Sallee in 2017. Characterized by their pop-style arrangements with vocal harmonies, basslines, riffing, percussion and beatboxing, they are widely known for their covers, mostly of modern pop works or Christmas songs, sometimes in the form of medleys, along with original material. Pentatonix formed in 2011 and subsequently won the third season of NBC's The Sing-Off, receiving $200,000 and a recording contract with Sony Music. When Sony's Epic Records dropped the group after The Sing-Off, the group formed its YouTube channel, distributing its music through Madison Gate Records, a label owned by Sony Pictures. With over 13 million subscribers and 2.7 billion views, Pentatonix's YouTube channel is currently the 50th most-subscribed-to YouTube channel. The group's video tribute to Daft Punk had received over 250 million views as of mid 2017. - From Wikipedia")
 
 album1 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist1.id, release_yr: 2018, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/18.jpg')
 
@@ -69,13 +86,31 @@ album13 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist13.id
 
 album14 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist14.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/14.png')
 
+album15 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist15.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/20.jpg')
+
+album16 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist16.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/21.jpg')
+
+album17 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist17.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/22.jpg')
+
+album18 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist18.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/23.jpg')
+
+album19 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist19.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/24.jpg')
+
+album20 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist20.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/25.png')
+
+album21 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist21.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/26.png')
+
+album22 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist22.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/27.jpg')
+
+album23 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist23.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/19.jpg')
+
 
 station1 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album6.image_url)
-station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album8.image_url)
-station3 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album9.image_url)
-station4 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album12.image_url)
-station5 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album4.image_url)
-station6 = Station.create(name: "Emo", user_id: demo.id, image_url: album1.image_url)
+station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album27.image_url)
+station3 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album25.image_url)
+station4 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album23.image_url)
+station5 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album19.image_url)
+station6 = Station.create(name: "Emo", user_id: demo.id, image_url: album22.image_url)
 
 song1 = Song.create(name: "Kryptonite", album_id: album1.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/3doord.mp3")
 
@@ -105,6 +140,28 @@ song13 = Song.create(name: "Symphony", album_id: album13.id, duration: 130, song
 
 song14 = Song.create(name: "Toxic", album_id: album14.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/tox.mp3")
 
+song15 = Song.create(name: "Havana", album_id: album15.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/hav.mp3")
+
+song16 = Song.create(name: "Bad Romance", album_id: album16.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/badr.mp3")
+
+song17 = Song.create(name: "Poker Face", album_id: album17.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/pkr.mp3")
+
+song18 = Song.create(name: "Take On Me", album_id: album18.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/take.mp3")
+
+song19 = Song.create(name: "Awake And Alive", album_id: album19.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/skill.mp3")
+
+song20 = Song.create(name: "Wake Me Up", album_id: album20.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/gogo.mp3")
+
+song21 = Song.create(name: "Heavy", album_id: album21.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/heavy.mp3")
+
+song22 = Song.create(name: "Can You Feel The Love", album_id: album22.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/elt.mp3")
+
+song23 = Song.create(name: "Your Song", album_id: album23.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/yrsong.mp3")
+
+song24 = Song.create(name: "Don't Stop The Music", album_id: album18.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/dntstp.mp3")
+
+song25 = Song.create(name: "Hallelujah", album_id: album19.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/hall.mp3")
+
 
 StationSong.create(song_id: song1.id, station_id: station1.id)
 StationSong.create(song_id: song2.id, station_id: station1.id)
@@ -121,7 +178,7 @@ StationSong.create(song_id: song12.id, station_id: station1.id)
 StationSong.create(song_id: song13.id, station_id: station1.id)
 StationSong.create(song_id: song14.id, station_id: station1.id)
 
-StationSong.create(song_id: song6.id, station_id: station2.id)
+StationSong.create(song_id: song21.id, station_id: station2.id)
 StationSong.create(song_id: song5.id, station_id: station2.id)
 StationSong.create(song_id: song4.id, station_id: station2.id)
 StationSong.create(song_id: song3.id, station_id: station2.id)
@@ -135,7 +192,7 @@ StationSong.create(song_id: song9.id, station_id: station2.id)
 StationSong.create(song_id: song8.id, station_id: station2.id)
 StationSong.create(song_id: song7.id, station_id: station2.id)
 
-StationSong.create(song_id: song5.id, station_id: station3.id)
+StationSong.create(song_id: song24.id, station_id: station3.id)
 StationSong.create(song_id: song3.id, station_id: station3.id)
 StationSong.create(song_id: song4.id, station_id: station3.id)
 StationSong.create(song_id: song6.id, station_id: station3.id)
@@ -148,7 +205,7 @@ StationSong.create(song_id: song10.id, station_id: station3.id)
 StationSong.create(song_id: song13.id, station_id: station3.id)
 StationSong.create(song_id: song11.id, station_id: station3.id)
 
-StationSong.create(song_id: song10.id, station_id: station4.id)
+StationSong.create(song_id: song23.id, station_id: station4.id)
 StationSong.create(song_id: song12.id, station_id: station4.id)
 StationSong.create(song_id: song5.id, station_id: station4.id)
 StationSong.create(song_id: song8.id, station_id: station4.id)
@@ -158,23 +215,23 @@ StationSong.create(song_id: song14.id, station_id: station4.id)
 StationSong.create(song_id: song11.id, station_id: station4.id)
 StationSong.create(song_id: song9.id, station_id: station4.id)
 
-StationSong.create(song_id: song6.id, station_id: station5.id)
-StationSong.create(song_id: song5.id, station_id: station5.id)
-StationSong.create(song_id: song11.id, station_id: station5.id)
+StationSong.create(song_id: song19.id, station_id: station5.id)
+StationSong.create(song_id: song15.id, station_id: station5.id)
+StationSong.create(song_id: song10.id, station_id: station5.id)
 StationSong.create(song_id: song14.id, station_id: station5.id)
 StationSong.create(song_id: song7.id, station_id: station5.id)
 StationSong.create(song_id: song13.id, station_id: station5.id)
 StationSong.create(song_id: song12.id, station_id: station5.id)
 StationSong.create(song_id: song9.id, station_id: station5.id)
-StationSong.create(song_id: song10.id, station_id: station5.id)
+StationSong.create(song_id: song25.id, station_id: station5.id)
 StationSong.create(song_id: song8.id, station_id: station5.id)
 
 StationSong.create(song_id: song6.id, station_id: station6.id)
-StationSong.create(song_id: song7.id, station_id: station6.id)
-StationSong.create(song_id: song8.id, station_id: station6.id)
 StationSong.create(song_id: song9.id, station_id: station6.id)
 StationSong.create(song_id: song10.id, station_id: station6.id)
 StationSong.create(song_id: song11.id, station_id: station6.id)
 StationSong.create(song_id: song12.id, station_id: station6.id)
 StationSong.create(song_id: song13.id, station_id: station6.id)
-StationSong.create(song_id: song14.id, station_id: station6.id)
+StationSong.create(song_id: song22.id, station_id: station6.id)
+StationSong.create(song_id: song23.id, station_id: station6.id)
+StationSong.create(song_id: song25.id, station_id: station6.id)
