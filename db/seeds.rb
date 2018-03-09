@@ -110,7 +110,7 @@ station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, im
 station3 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album22.image_url)
 station4 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album21.image_url)
 station5 = Station.create(name: Faker::Ancient.unique.titan, user_id: demo.id, image_url: album19.image_url)
-station6 = Station.create(name: "Emo", user_id: demo.id, image_url: album22.image_url)
+station6 = Station.create(name: "Emo", user_id: demo.id, image_url: album24.image_url)
 
 song1 = Song.create(name: "Kryptonite", album_id: album1.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/3doord.mp3")
 
