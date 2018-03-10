@@ -16,11 +16,11 @@ This full stack application makes use of a variety of software technologies in o
 
 2. Each Station has links to access different subscribed stations as well as the ability to redirect to the current song's artist description page.  Just like the real Pandora!
 
-![StationShow](https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/ReadMe/Jukebox-Station-Show.png)
+![StationShow](https://github.com/Edwardc148/Markups/blob/master/updated_show.png)
 
 3. Searching for music can really make the difference in a music application.  Being able to search for different artists or songs can help improve the user experience as well as make each user account reflect their own personality.
 
-![Search](https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/ReadMe/Search-Functionality.png)
+![Search](https://github.com/Edwardc148/Markups/blob/master/updated_search.png)
 
 
 ## Sample Code
