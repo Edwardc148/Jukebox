@@ -58,52 +58,55 @@ artist22 = Artist.create(name: "Rihanna", description: "Robyn Rihanna Fenty was 
 
 artist23 = Artist.create(name: "Pentatonix", description: "Pentatonix (abbreviated PTX) is an American a cappella group from Arlington, Texas, consisting of vocalists Scott Hoying, Mitch Grassi, Kirstin Maldonado, Kevin Olusola and Matt Sallee. Avi Kaplan was formerly a member of the group; he was replaced by Sallee in 2017. Characterized by their pop-style arrangements with vocal harmonies, basslines, riffing, percussion and beatboxing, they are widely known for their covers, mostly of modern pop works or Christmas songs, sometimes in the form of medleys, along with original material. Pentatonix formed in 2011 and subsequently won the third season of NBC's The Sing-Off, receiving $200,000 and a recording contract with Sony Music. When Sony's Epic Records dropped the group after The Sing-Off, the group formed its YouTube channel, distributing its music through Madison Gate Records, a label owned by Sony Pictures. With over 13 million subscribers and 2.7 billion views, Pentatonix's YouTube channel is currently the 50th most-subscribed-to YouTube channel. The group's video tribute to Daft Punk had received over 250 million views as of mid 2017. - From Wikipedia")
 
-album1 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist1.id, release_yr: 2018, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/18.jpg')
+album1 = Album.create(name: "The Better Life", artist_id: artist1.id, release_yr: 2018, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/18.jpg')
 
-album2 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist2.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/1.png')
+album2 = Album.create(name: "Eurodance", artist_id: artist2.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/1.png')
 
-album3 = Album.create(name: Faker::Ancient.unique.hero, artist_id: artist3.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/3.jpg')
+album3 = Album.create(name: "Collage", artist_id: artist3.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/3.jpg')
 
-album4 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist4.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/4.jpg')
+album4 = Album.create(name: "Divide", artist_id: artist4.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/4.jpg')
 
-album5 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist5.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/5.jpg')
+album5 = Album.create(name: "The Colour And The Shape", artist_id: artist5.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/5.jpg')
 
-album6 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist6.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/6.jpg')
+album6 = Album.create(name: "The Love Below", artist_id: artist6.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/6.jpg')
 
-album7 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist7.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/7.jpg')
+album7 = Album.create(name: "All The Right Reasons", artist_id: artist7.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/7.jpg')
 
-album8 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist8.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/8.png')
+album8 = Album.create(name: "So Good", artist_id: artist8.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/8.png')
 
-album9 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist9.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/9.jpg')
+album9 = Album.create(name: "New Eyes", artist_id: artist9.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/9.jpg')
 
-album10 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist10.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/10.jpg')
+album10 = Album.create(name: "Royalty", artist_id: artist10.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/10.jpg')
 
-album11 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist11.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/11.png')
+album11 = Album.create(name: "BFAM", artist_id: artist11.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/11.png')
 
-album12 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist12.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/12.jpg')
+album12 = Album.create(name: "Let Go", artist_id: artist12.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/12.jpg')
 
-album13 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist13.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/13.png')
+album13 = Album.create(name: "So Good", artist_id: artist13.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/13.png')
 
-album14 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist14.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/14.png')
+album14 = Album.create(name: "In The Zone", artist_id: artist14.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/14.png')
 
-album15 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist15.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/20.jpg')
+album15 = Album.create(name: "Camila", artist_id: artist15.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/30.jpg')
 
-album16 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist16.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/21.jpg')
+album16 = Album.create(name: "The Fame Monster", artist_id: artist16.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/25.png')
 
-album17 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist17.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/22.jpg')
+album17 = Album.create(name: "High And Low", artist_id: artist17.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/20.jpg')
 
-album18 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist18.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/23.jpg')
+album18 = Album.create(name: "Comatose", artist_id: artist18.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/22.jpg')
 
-album19 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist19.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/24.jpg')
+album19 = Album.create(name: "Make It Big", artist_id: artist19.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/21.jpg')
 
-album20 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist20.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/25.png')
+album20 = Album.create(name: "One More Light", artist_id: artist20.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/23.jpg')
 
-album21 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist21.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/26.png')
+album21 = Album.create(name: "Fearless", artist_id: artist21.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/26.png')
 
-album22 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist22.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/27.jpg')
+album22 = Album.create(name: "Loud", artist_id: artist22.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/31.jpg')
 
-album23 = Album.create(name: Faker::Ancient.unique.titan, artist_id: artist23.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/19.jpg')
+album23 = Album.create(name: "Best Of Elton", artist_id: artist21.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/26.png')
 
+album24 = Album.create(name: "The Fame", artist_id: artist16.id, release_yr: 2017, image_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/27.jpg")
+
+album25 = Album.create(name: "PTX Delux", artist_id: artist23.id, release_yr: 2016, image_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/19.jpg")
 
 station1 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album6.image_url)
 station2 = Station.create(name: Faker::Ancient.unique.hero, user_id: demo.id, image_url: album23.image_url)
@@ -144,23 +147,23 @@ song15 = Song.create(name: "Havana", album_id: album15.id, duration: 130, song_u
 
 song16 = Song.create(name: "Bad Romance", album_id: album16.id, duration: 130, song_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/badr.mp3")
 
-song17 = Song.create(name: "Poker Face", album_id: album17.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/pkr.mp3")
+song17 = Song.create(name: "Poker Face", album_id: album24.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/pkr.mp3")
 
-song18 = Song.create(name: "Take On Me", album_id: album18.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/take.mp3")
+song18 = Song.create(name: "Take On Me", album_id: album17.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/take.mp3")
 
-song19 = Song.create(name: "Awake And Alive", album_id: album19.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/skill.mp3")
+song19 = Song.create(name: "Awake And Alive", album_id: album18.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/skill.mp3")
 
-song20 = Song.create(name: "Wake Me Up", album_id: album20.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/gogo.mp3")
+song20 = Song.create(name: "Wake Me Up", album_id: album19.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/gogo.mp3")
 
-song21 = Song.create(name: "Heavy", album_id: album21.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/heavy.mp3")
+song21 = Song.create(name: "Heavy", album_id: album20.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/heavy.mp3")
 
-song22 = Song.create(name: "Can You Feel The Love", album_id: album22.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/elt.mp3")
+song22 = Song.create(name: "Can You Feel The Love", album_id: album21.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/elt.mp3")
 
 song23 = Song.create(name: "Your Song", album_id: album23.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/yrsong.mp3")
 
-song24 = Song.create(name: "Don't Stop The Music", album_id: album18.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/dntstp.mp3")
+song24 = Song.create(name: "Don't Stop The Music", album_id: album22.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/dntstp.mp3")
 
-song25 = Song.create(name: "Hallelujah", album_id: album19.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/hall.mp3")
+song25 = Song.create(name: "Hallelujah", album_id: album25.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/hall.mp3")
 
 
 StationSong.create(song_id: song1.id, station_id: station1.id)
