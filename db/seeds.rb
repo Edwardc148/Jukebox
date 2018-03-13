@@ -52,11 +52,13 @@ artist19 = Artist.create(name: "Wham!", description: "Michael and Ridgeley met a
 
 artist20 = Artist.create(name: "Linkin Park", description: "Linkin Park is an American rock band from Agoura Hills, California. Formed in 1996, the band rose to international fame with their debut album Hybrid Theory (2000), which was certified Diamond by the RIAA in 2005 and multi-Platinum in several other countries. Their following studio album Meteora continued the band's success, topping the Billboard 200 album chart in 2003, and was followed by extensive touring and charity work.Having adapted nu metal and rap metal to a radio-friendly yet densely layered style in Hybrid Theory and Meteora, the band explored other genres on their next studio album, Minutes to Midnight (2007). The album topped the Billboard charts and had the third-best debut week of any album that year. The band continued to explore a wider variation of musical types in their fourth album, A Thousand Suns (2010), layering their music with more electronic sounds. Their fifth album, Living Things (2012), combines musical elements from all of their previous records. Their sixth album, The Hunting Party (2014), returned to a heavier rock sound. Their seventh album One More Light, a more electronic and pop-oriented record, was released on May 19, 2017. - From Wikipedia")
 
-artist21 = Artist.create(name: "Elton John", description: "Sir Elton John is one of pop music's great survivors. Born 25 March, 1947, as Reginald Kenneth Dwight, he started to play the piano at the early age of four. At the age of 11, he won a scholarship to the Royal Academy of Music. His first band was called Bluesology. He later auditioned (unsuccessfully) as lead singer for the progressive rock bands King Crimson and Gentle Giant. Dwight teamed up with lyricist Bernie Taupin and changed his name to Elton John (merging the names of saxophonist Elton Dean and Long John Baldry). The duo wrote songs for Lulu and Roger Cook. In the early 1970s, he recorded the concept album Tumbleweed Connection. He became the most successful pop artist of the 1970s, and he has survived many different pop fads including punk, the New Romantics and Britpop to remain one of Britain's most internationally acclaimed musicians. - From IMDB")
+artist21 = Artist.create(name: "Taylor Swift", description: "Born and raised in Pennsylvania, Swift moved to Nashville, Tennessee at the age of 14 to pursue a career in country music. She signed with the label Big Machine Records and became the youngest artist ever signed by the Sony/ATV Music publishing house. Her 2006 self-titled debut album peaked at number five on the Billboard 200 and spent the most weeks on the chart in the 2000s. The album's third single, Our Song, made her the youngest person to single-handedly write and perform a number-one song on the Hot Country Songs chart. Swift's second album, Fearless, was released in 2008. Buoyed by the success of pop crossover singles Love Story and You Belong with Me, Fearless became the best-selling album of 2009 in the United States. The album won four Grammy Awards, with Swift becoming the youngest Album of the Year winner. - From Wikipedia")
 
 artist22 = Artist.create(name: "Rihanna", description: "Robyn Rihanna Fenty was born in a parish in Barbados called St. Michael, to Monica (Braithwaite), an accountant, and Ronald Fenty, a warehouse supervisor. Her mother is Afro-Guyanese and her father is of Afro-Barbadian and British Isles ancestry (known as Redlegs in the Caribbean). Rihanna lived the life of a normal island girl going to Combermere, a top sixth form school. Rihanna won numerous beauty pageants and performed Mariah Carey's single Hero in a school talent show. Her life changed forever when one of her friends introduced her to Evan Rodgers, a producer from New York who was in Barbados for a vacation with his wife, who is a native. Rodgers arranged for her to go to New York to meet Jay Z, CEO of Def Jam Records. He heard her sing and knew she was going to be incredibly successful. She was age 16 when she was signed to Def Jam. Since then, she's amassed phenomenal success. - From IMDB")
 
-artist23 = Artist.create(name: "Pentatonix", description: "Pentatonix (abbreviated PTX) is an American a cappella group from Arlington, Texas, consisting of vocalists Scott Hoying, Mitch Grassi, Kirstin Maldonado, Kevin Olusola and Matt Sallee. Avi Kaplan was formerly a member of the group; he was replaced by Sallee in 2017. Characterized by their pop-style arrangements with vocal harmonies, basslines, riffing, percussion and beatboxing, they are widely known for their covers, mostly of modern pop works or Christmas songs, sometimes in the form of medleys, along with original material. Pentatonix formed in 2011 and subsequently won the third season of NBC's The Sing-Off, receiving $200,000 and a recording contract with Sony Music. When Sony's Epic Records dropped the group after The Sing-Off, the group formed its YouTube channel, distributing its music through Madison Gate Records, a label owned by Sony Pictures. With over 13 million subscribers and 2.7 billion views, Pentatonix's YouTube channel is currently the 50th most-subscribed-to YouTube channel. The group's video tribute to Daft Punk had received over 250 million views as of mid 2017. - From Wikipedia")
+artist23 = Artist.create(name: "Selena Gomez", description: "Selena Marie Gomez was born in Grand Prairie, Texas on July 22, 1992, to Ricardo Joel Gomez and former stage actress Amanda Dawn Mandy Cornett. Gomez was named after Tejano singer and actress Selena Quintanilla-Pérez, who died in 1995. Her father is of Mexican descent while her mother, who was adopted, has some Italian ancestry. Regarding her Hispanic heritage, Gomez has stated, My family does have Quinceañeras, and we go to the communion church. We do everything that's Catholic, but we don't really have anything traditional except [that we] go to the park and have barbecues on Sundays after church. Gomez's parents divorced when she was five years old, and she remained with her mother.[5][14] Selena has two siblings: Gracie Elliot Teefey was born to Amanda and her second husband Brian Teefey on June 12, 2013; and Victoria Tori Gomez was born to Ricardo and his wife Sara Gomez on June 25, 2014. She earned her high-school diploma through homeschooling in May 2010. - From Wikipedia")
+
+artist24 = Artist.create(name: "Elton John", description: "Raised in the Pinner area of London, John learned to play piano at an early age, and by 1962 had formed Bluesology. John met his songwriting partner, Bernie Taupin, in 1967, after they had both answered an advert for songwriters. For two years they wrote songs for other artists, including Lulu, and John also worked as a session musician for artists such as the Hollies and the Scaffold. In 1969 his debut album, Empty Sky, was released. In 1970 a single, Your Song, from his second album, Elton John, reached the top ten in the UK and the US, his first hit single. After decades of commercial chart success, John has also achieved success in musical theatre, both in the West End and on Broadway, composing the music for The Lion King (film and musical), Aida and Billy Elliot the Musical. - From Wikipedia")
 
 album1 = Album.create(name: "The Better Life", artist_id: artist1.id, release_yr: 2018, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/18.jpg')
 
@@ -94,7 +96,7 @@ album17 = Album.create(name: "High And Low", artist_id: artist17.id, release_yr:
 
 album18 = Album.create(name: "Comatose", artist_id: artist18.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/22.jpg')
 
-album19 = Album.create(name: "Make It Big", artist_id: artist19.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/21.jpg')
+album19 = Album.create(name: "Make It Big", artist_id: artist19.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/whm.jpg')
 
 album20 = Album.create(name: "One More Light", artist_id: artist20.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/23.jpg')
 
@@ -102,14 +104,14 @@ album21 = Album.create(name: "Fearless", artist_id: artist21.id, release_yr: 201
 
 album22 = Album.create(name: "Loud", artist_id: artist22.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/31.jpg')
 
-album23 = Album.create(name: "Best Of Elton", artist_id: artist21.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/26.png')
+album23 = Album.create(name: "Best Of Elton", artist_id: artist24.id, release_yr: 2017, image_url: 'https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/elt.jpg')
 
 album24 = Album.create(name: "The Fame", artist_id: artist16.id, release_yr: 2017, image_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/27.jpg")
 
-album25 = Album.create(name: "PTX Deluxe", artist_id: artist23.id, release_yr: 2016, image_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/19.jpg")
+album25 = Album.create(name: "Revival", artist_id: artist23.id, release_yr: 2016, image_url: "https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_images/19.jpg")
 
 station1 = Station.create(name: "Selena Gomez", user_id: demo.id, image_url: album25.image_url)
-station2 = Station.create(name: "Taylor Swift", user_id: demo.id, image_url: album23.image_url)
+station2 = Station.create(name: "Taylor Swift", user_id: demo.id, image_url: album21.image_url)
 station3 = Station.create(name: "Bad Romance", user_id: demo.id, image_url: album16.image_url)
 station4 = Station.create(name: "Jennifer Ledger", user_id: demo.id, image_url: album18.image_url)
 station5 = Station.create(name: "Meteora", user_id: demo.id, image_url: album19.image_url)
@@ -158,13 +160,13 @@ song20 = Song.create(name: "Wake Me Up", album_id: album19.id, duration: 130, so
 
 song21 = Song.create(name: "Heavy", album_id: album20.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/heavy.mp3")
 
-song22 = Song.create(name: "Can You Feel The Love", album_id: album21.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/elt.mp3")
+song22 = Song.create(name: "Red", album_id: album21.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/rd.mp3")
 
 song23 = Song.create(name: "Your Song", album_id: album23.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/yrsong.mp3")
 
 song24 = Song.create(name: "Don't Stop The Music", album_id: album22.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/dntstp.mp3")
 
-song25 = Song.create(name: "Hallelujah", album_id: album25.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/hall.mp3")
+song25 = Song.create(name: "Wolves", album_id: album25.id, duration: 130, song_url: "	https://s3-us-west-1.amazonaws.com/jukebox-storage-dev/jukebox_music/wol.mp3")
 
 
 StationSong.create(song_id: song1.id, station_id: station1.id)
